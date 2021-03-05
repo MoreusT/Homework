@@ -1,0 +1,63 @@
+:root {
+  --neutral-background: #191b1d;
+  --neutral-text: #ffffff;
+  --selection-background: #0064dd;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--neutral-background);
+  line-height: 1.7rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+::selection {
+  background: var(--selection-background);
+}
+::-moz-selection {
+  background: var(--selection-background);
+}
+a:link {
+  color: #006eff;
+}
+a:visited {
+  color: #e100ff;
+}
+body {
+  color: var(--neutral-text);
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 800px;
+  float: center;
+}
+.portrait {
+  padding: 0 0rem 0.5rem 0.5rem;
+  width: 15rem;
+  min-width: 210px;
+  position: relative;
+  float: right;
+}
+.logo {
+  padding: 0 0rem 0.2rem 0.2rem;
+  width: 2rem;
+  position: relative;
+  float: right;
+}
+.face {
+  top: 2.2rem;
+  left: 2rem;
+}
+.bold {
+  font-weight: bold;
+}
+.title {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.langlink {
+  float: right;
+  padding-right: 1rem;
+}
+.totop {
+  position: relative;
+  left: 50%;
+}
