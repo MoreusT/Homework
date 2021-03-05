@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список покупок</title>
+    <style>
+        body {
+            max-width: 300px;
+            margin: 0 10%;
+            line-height: 1.7rem;
+
+        }
+
+        input[type=checkbox]:checked+label {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Нужно купить</h1>
+        <input type="checkbox" id="bread" name="food[]" value="bread">
+        <label for="bread">Хлеб</label>
+        <br>
+        <input type="checkbox" id="cheese" name="food[]" value="cheese">
+        <label for="cheese">Сыр</label>
+        <br>
+        <input type="checkbox" id="sausage" name="food[]" value="sausage">
+        <label for="sausage">Колбаса</label>
+        <br>
+        <input type="checkbox" id="carrot" name="food[]" value="carrot">
+        <label for="carrot">Морковь</label>
+        <br>
+        <input type="checkbox" id="rice" name="food[]" value="rice">
+        <label for="rice">Рис</label>
+        <br>
+        <input type="checkbox" id="sauce" name="food[]" value="sauce">
+        <label for="sauce">Соус</label>
+        <br>
+        <input type="checkbox" id="water" name="food[]" value="water">
+        <label for="water">Вода</label>
+        <br>
+    </main>
+    <footer>
+        <nav>
+            <a href="#">Наверх</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

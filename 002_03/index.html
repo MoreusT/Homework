@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            max-width: 1000px;
+            margin: 2rem 10%;
+            line-height: 1.7rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .tyk:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form id="my_form" enctype="multipart/form-data"
+            onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+            <fieldset>
+                <legend>Общие данные</legend>
+                <span>Заблокированое поле</span>
+                <input type="text" disabled value="Измени меня, если сможешь" size="22">
+                <br>
+                <span>Может в этот раз выйдет</span>
+                <input type="text" readonly value="Попробуй в другой раз" size="17">
+                <br>
+                <span>Всё таки придётся что-то написать</span>
+                <input type="text" name="sometext" required value="" placeholder="Пиши, не ломайся">
+                <br>
+                <span>Можешь и мыло своё оставить</span>
+                <input type="email" name="email" placeholder="EMAIL">
+                <br>
+                <span>Давай и пароль раз на то пошло</span>
+                <input type="password" name="pass">
+                <br>
+                <span>Как на счёт даты рождения?</span>
+                <input type="date" name="birth_date">
+                <br>
+                <span>Это сколько лет?</span>
+                <input type="number" name="age" min="1" max="120">
+                <br>
+                <span>А по гендеру кто?</span>
+                <label><input type="radio" name="gender" value="man" checked>Мужчина</label>
+                <label><input type="radio" name="gender" value="woman">Женщина</label>
+                <label><input type="radio" name="gender" value="ta_hz">Ни туда, ни сюда</label>
+                <br>
+                <span>Чатик и/или сеточка?</span>
+                <label><input type="checkbox" name="social[]" value="facebook">Фейсбук</label>
+                <label><input type="checkbox" name="social[]" value="vk">Нелегальная сеть</label>
+                <label><input type="checkbox" name="social[]" value="telegram">Телега</label>
+                <label><input type="checkbox" name="social[]" value="slack">Слакер</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Другая информация</legend>
+                <span>Цвет волос</span>
+                <input type="color" name="color">
+                <br>
+                <span>Мобильный писать сюда</span>
+                <input type="tel" name="mobile" value="+380">
+                <br>
+                <span>Может и время забьем?</span>
+                <input type="time" name="time">
+                <br>
+                <span>А сайт имеется?</span>
+                <input type="url" name="url">
+                <br>
+                <span>Почти случайное число</span>
+                <input type="range" name="almost_random_number" min="1" max="42" step="1">
+                <br>
+                <span>Фото по желанию</span>
+                <input type="file" name="photo">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Не inmput-ы</legend>
+                <span>Любимый персонаж</span>
+                <select name=" character" size="1">
+                    <option value="">Choose wisely</option>
+                    <option value="shao_kahn">Шао Кан</option>
+                    <option value="kung_lao">Кунг Лао</option>
+                    <option value="sub_zero">Саб-Зиро</option>
+                    <option value="scorpion">Скорпион</option>
+                </select>
+                <br>
+                <br>
+                <span>А если персонажи?</span>
+                <select name="characters[]" multiple size="5">
+                    <option value="">Choose your destiny</option>
+                    <option value="noob_saibot">Noob Saibot</option>
+                    <option value="cyrax">Cyrax</option>
+                    <option value="kabal">Kabal</option>
+                    <option value="motaro">Motaro</option>
+                    <option value="smoke">Smoke</option>
+                </select>
+                <br>
+                <br>
+                <span>Пара слов для будущих поколений</span>
+                <textarea name="afewwords" cols="30" rows="5" placeholder="Писать сюда"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Жмакалки</legend>
+                <button type="submit">Подтвердить</button>
+                <button type="reset">Сбросить</button>
+                <input type="button" class="tyk" value="Тык">
+                <input type="button" value="Не тык" disabled>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
