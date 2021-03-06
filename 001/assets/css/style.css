@@ -5,6 +5,7 @@
 }
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   background-color: var(--neutral-background);
   line-height: 1.7rem;
@@ -24,8 +25,14 @@ a:visited {
 }
 body {
   color: var(--neutral-text);
+  min-width: 525px;
+}
+h1 {
+  padding: 1rem 0;
+}
+.container {
   margin: 0 auto;
-  min-width: 500px;
+  width: 90%;
   max-width: 800px;
 }
 .portrait {
@@ -54,9 +61,12 @@ body {
 }
 .langlink {
   float: right;
-  padding-right: 1rem;
 }
 .totop {
   position: relative;
   left: 50%;
+}
+
+ul {
+  left: 1rem;
 }
