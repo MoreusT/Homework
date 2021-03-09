@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <style>
+        * {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         body {
             max-width: 1000px;
             margin: 2rem 10%;
@@ -19,6 +24,11 @@
         .tyk:hover {
             background-color: blueviolet;
         }
+
+        span {
+            display: inline-block;
+            width: 350px;
+        }
     </style>
 </head>
 
@@ -29,7 +39,7 @@
             <fieldset>
                 <legend>Общие данные</legend>
                 <span>Заблокированое поле</span>
-                <input type="text" disabled value="Измени меня, если сможешь" size="22">
+                <input type="text" disabled value="Измени меня, если сможешь" size="23">
                 <br>
                 <span>Может в этот раз выйдет</span>
                 <input type="text" readonly value="Попробуй в другой раз" size="17">
