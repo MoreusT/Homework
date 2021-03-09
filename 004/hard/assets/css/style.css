@@ -5,8 +5,129 @@
 }
 
 body {
-  color: #232323;
-  background-color: #efefef;
+  background-color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header_top {
+  background: -moz-linear-gradient(
+    90deg,
+    #9b0c4e 0%,
+    #be076f 100%
+  ); /* ff3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #be076f),
+    color-stop(100%, #9b0c4e)
+  ); /* safari4+,chrome */
+  background: -webkit-linear-gradient(
+    90deg,
+    #9b0c4e 0%,
+    #be076f 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(
+    90deg,
+    #9b0c4e 0%,
+    #be076f 100%
+  ); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #9b0c4e 0%, #be076f 100%); /* ie10+ */
+  background: linear-gradient(0deg, #9b0c4e 0%, #be076f 100%); /* w3c */
+}
+
+#main_menu {
+  border-left: 2px solid #7d0546;
+}
+
+#main_menu li {
+  display: inline-block;
+  border-right: 2px solid #7d0546;
+}
+#main_menu li a {
+  display: inline-block;
+  height: 47px;
+  line-height: 47px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
+
+#main_menu li a:hover {
+  background-color: #770444;
+}
+
+/*===promo===*/
+
+.header_bottom {
+  background-color: #000;
+}
+
+.promo {
+  background: url('../images/flower.jpg')  right top no-repeat;
+  height: 260px;
+}
+
+.promo_title_wrap {
+  padding-top: 96px;
+}
+
+.promo_title {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.promo_subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #b10969;
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+
+/*===main content===*/
+
+main {
+  padding: 30px 0 15px;
+}
+
+main .container {
+  border: 2px solid #000;
+}
+
+.content {
+  width: 45%;
+  float: left;
+
+  box-shadow: inset 0 0 2px 2px #f00;
+  height: 200px;
+}
+
+.col_1, .col_2 {
+  width: 27.5%;
+  float: right;
+
+  box-shadow: inset 0 0 2px 2px #f00;
+  height: 200px;
+}
+
+.clearfix::after {
+  content:'';
+  display: block;
+  clear: both;
 }
