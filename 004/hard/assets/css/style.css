@@ -77,7 +77,7 @@ ol {
 }
 
 .promo {
-  background: url('../images/flower.jpg')  right top no-repeat;
+  background: url("../images/flower.jpg") right top no-repeat;
   height: 260px;
 }
 
@@ -118,7 +118,8 @@ main .container {
   height: 200px;
 }
 
-.col_1, .col_2 {
+.col_1,
+.col_2 {
   width: 27.5%;
   float: right;
 
@@ -127,7 +128,7 @@ main .container {
 }
 
 .clearfix::after {
-  content:'';
+  content: "";
   display: block;
   clear: both;
 }
