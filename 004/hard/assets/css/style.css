@@ -173,7 +173,7 @@ article p span {
   padding: 0 27px 0 14px;
 }
 
-.article_tags span {
+.article_tags li {
   color: #808080;
   font-weight: 700;
 }
