@@ -79,7 +79,7 @@ ol {
 }
 
 .promo {
-  background: url("../images/flower.jpg") right top no-repeat;
+  background: url("../images/flower.jpg") right 45px top 0 no-repeat;
   height: 260px;
 }
 
@@ -121,7 +121,7 @@ main {
   font-weight: 700;
   text-transform: lowercase;
   letter-spacing: -1px;
-  padding: 26px 27px 14px 14px;
+  padding: 29px 27px 14px 14px;
 }
 
 .article_post_date {
@@ -135,7 +135,7 @@ main {
 article p {
   text-align: justify;
   line-height: 24px;
-  padding: 0 27px 0 14px;
+  padding: 0px 27px 0 14px;
   color: #6f6f6f;
 }
 
@@ -153,7 +153,7 @@ article p span {
 }
 
 .article_comments {
-  padding: 34px 27px 21px 14px;
+  padding: 37px 27px 21px 14px;
   font-size: 12px;
   font-weight: 700;
 }
@@ -170,7 +170,7 @@ article p span {
 }
 
 .article_tags ul {
-  padding: 0 27px 0 14px;
+  padding: 1px 27px 0 14px;
 }
 
 .article_tags li {
@@ -201,7 +201,7 @@ article p span {
   color: #b10969;
   font-size: 15px;
   font-weight: 700;
-  padding: 16px 20px 0px 20px;
+  padding: 17px 20px 0px 20px;
 }
 
 .col_1_dotlist {
@@ -230,7 +230,7 @@ article p span {
   width: 27.5%;
   float: right;
   background: #f2f2f2;
-  padding: 16px 16px 23px 16px;
+  padding: 20px 16px 25px 16px;
 }
 
 .col_2 h2 {
@@ -255,6 +255,7 @@ article p span {
   line-height: 18px;
   text-align: center;
   margin-top: 32px;
+  padding: 0 15px;
 }
 
 .col_2 ul li p {
@@ -280,25 +281,20 @@ article p span {
 
 .copyright {
   color: #fff;
-  margin: 0 auto;
-  padding: 0px 8px;
-  width: 300px;
-  height: 85px;
-  line-height: 85px;
-  text-align: justify;
+  padding: 38px 8px;
   word-spacing: 1px;
   font-size: 10px;
   text-transform: uppercase;
   font-weight: 100;
+  text-align: center;
 }
 
-.copyright h5 {
+.copyright a {
   display: inline-block;
   font-size: 10px;
   font-weight: 100;
   background: #bb096b;
-  height: 16px;
-  line-height: 16px;
-  width: 64px;
-  text-align: center;
+  color: #fff;
+  padding: 2px 6px;
+  text-decoration: none;
 }
