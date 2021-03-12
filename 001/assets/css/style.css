@@ -3,38 +3,42 @@
   --neutral-text: #ffffff;
   --selection-background: #0064dd;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--neutral-background);
-  line-height: 1.7rem;
-  font-family: Helvetica, Arial, sans-serif;
 }
+
 ::selection {
   background: var(--selection-background);
 }
+
 ::-moz-selection {
   background: var(--selection-background);
 }
+
 a:link {
   color: #006eff;
 }
+
 a:visited {
   color: #e100ff;
 }
+
 body {
   color: var(--neutral-text);
   min-width: 525px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--neutral-background);
 }
-h1 {
-  padding: 1rem 0;
-}
+
 .container {
   margin: 0 auto;
   width: 90%;
   max-width: 800px;
 }
+
 .portrait {
   padding: 0 0rem 0.5rem 0.5rem;
   width: 15rem;
@@ -42,31 +46,57 @@ h1 {
   position: relative;
   float: right;
 }
+
 .logo {
   padding: 0 0rem 0.2rem 0.2rem;
   width: 2rem;
   position: relative;
   float: right;
 }
+
 .face {
   top: 2.2rem;
   left: 2rem;
 }
+
 .bold {
   font-weight: bold;
 }
+
 .title {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
+
 .langlink {
+  padding: 2rem 1rem 0;
   float: right;
 }
-.totop {
-  position: relative;
-  left: 50%;
+
+h1 {
+  padding: 1rem 0;
 }
 
 ul {
-  left: 1rem;
+  padding: 0 1.4rem;
+}
+
+ul li {
+  line-height: 1.7rem;
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+.totop {
+  text-align: center;
 }
