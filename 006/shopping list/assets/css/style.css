@@ -52,7 +52,7 @@ main {
   padding: 40px 0 48px;
 }
 
-input[type=checkbox]:checked + .text_ch {
+input[type=checkbox]:checked + label {
   text-decoration: line-through;
   color: #a3a0b5;
 }
@@ -79,7 +79,7 @@ input[type=checkbox]:checked + .text_ch {
   height: 25px;
   background-color: #eee;
   display: inline-block;
-  margin: 14px 18px 10px 10px;
+  margin: 14px 18px 15px 10px;
 }
 
 .custom_ch::after {
@@ -90,7 +90,7 @@ input[type=checkbox]:checked + .text_ch {
   border-bottom: 5px solid transparent;
   border-left: 5px solid transparent;
   transform: rotate(-52deg);
-  margin: 6px 4px;
+  margin: -23px 4px;
 }
 
 .shop_list li input {
@@ -112,12 +112,17 @@ input[type=checkbox]:checked + .text_ch {
   position: relative;
   bottom: 14px;
   letter-spacing: 0.5px;
+  display: inline-block;
+  left: 43px;
+  top: -2px;
+  min-width: 500px;
 }
 
 .text_ch span {
   position: relative;
   font-size: 16px;
   bottom: 2px;
+  left: 7px;
   letter-spacing: 0.2px;
   word-spacing: -2px;
 }
@@ -133,7 +138,7 @@ input[type=checkbox]:checked + .text_ch {
 footer {
   background-color: #3b3f45;
   color: #eb7e7f;
-  height: 35.2%;
+  height: 35.5%;
 }
 
 footer div {
