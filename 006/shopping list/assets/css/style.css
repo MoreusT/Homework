@@ -1,13 +1,6 @@
 @font-face {
-  font-family: 'ProximaNova';
-  src: url('../fonts/ProximaNova-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-family: 'Trebuchet MS';
+  src: url('../fonts/TrebuchetMS.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -20,11 +13,133 @@
 }
 
 body {
-  font-family: 'ProximaNova', sans-serif;
-  font-weight: 400;
+  /*font-family: "Trebuchet MS", Arial, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;
+  border: 24px solid #fff;
+  height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  text-align: center;
+  padding: 23px 0 21px;
+}
+
+header h1 {
+  font-size: 35px;
+  letter-spacing: 0.6px;
+}
+
+header div {
+  padding-top: 5px;
   font-size: 24px;
 }
 
-.thin {
-    font-weight:300;
+main {
+  background-color: #3b3f45;
+  padding: 40px 0 48px;
+}
+
+input[type=checkbox]:checked + .text_ch {
+  text-decoration: line-through;
+  color: #a3a0b5;
+}
+
+.shop_list li {
+  font-size: 25px;
+  color: #fff;
+  background-color: #88839e;
+  position: relative;
+  border: solid 4px transparent;
+  transition: all .1s ease-in;
+}
+
+.shop_list li:hover {
+  border-color: #fff;
+}
+
+.shop_list li:nth-child(2n) {
+  background-color: #7a7593;
+}
+
+.custom_ch {
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  display: inline-block;
+  margin: 14px 18px 10px 10px;
+}
+
+.custom_ch::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 5px;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  transform: rotate(-52deg);
+  margin: 6px 4px;
+}
+
+.shop_list li input {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.shop_list li input:checked + .custom_ch::after {
+  border-color: #000;
+}
+
+.text_ch {
+  position: relative;
+  bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.text_ch span {
+  position: relative;
+  font-size: 16px;
+  bottom: 2px;
+  letter-spacing: 0.2px;
+  word-spacing: -2px;
+}
+
+.text_ch span::before {
+  content: "(  "
+}
+
+.text_ch span::after {
+  content: " )"
+}
+
+footer {
+  background-color: #3b3f45;
+  color: #eb7e7f;
+  height: 35.2%;
+}
+
+footer div {
+  text-align: center;
+  padding: 21px 0;
+  font-size: 26px;
+  letter-spacing: 0.2px;
+  background-color: #4a4f56;
 }
