@@ -53,16 +53,26 @@ main {
 }
 
 input[type=checkbox]:checked + label {
-  text-decoration: line-through;
   color: #a3a0b5;
+}
+
+input[type=checkbox]:checked + label > span::after {
+  content: "";
+  display: inline-block;
+  width: 102.5%;
+  border-bottom: solid 2px #a3a0b5;
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: -1px;
 }
 
 .shop_list li {
   font-size: 25px;
   color: #fff;
   background-color: #88839e;
-  position: relative;
-  border: solid 4px transparent;
+  border-top: solid 4px transparent;
+  border-bottom: solid 4px transparent;
   transition: all .1s ease-in;
 }
 
@@ -74,29 +84,34 @@ input[type=checkbox]:checked + label {
   background-color: #7a7593;
 }
 
-.custom_ch {
+.custom_ch::before {
+  content: "";
   width: 25px;
   height: 25px;
   background-color: #eee;
   display: inline-block;
-  margin: 14px 18px 15px 10px;
+  position: relative;
+  left: -18px;
+  top: 3px;
 }
 
 .custom_ch::after {
   content: "";
-  display: block;
+  display: inline-block;
   width: 12px;
   height: 5px;
   border-bottom: 5px solid transparent;
   border-left: 5px solid transparent;
   transform: rotate(-52deg);
-  margin: -23px 4px;
+  position: relative;
+  left: -440px;
+  top: -6px;
 }
 
 .shop_list li input {
-  position: absolute;
-  left: 10px;
-  top: 14px;
+  position: relative;
+  left: 13px;
+  top: 3px;
   width: 25px;
   height: 25px;
   opacity: 0;
@@ -113,9 +128,8 @@ input[type=checkbox]:checked + label {
   bottom: 14px;
   letter-spacing: 0.5px;
   display: inline-block;
-  left: 43px;
-  top: -2px;
-  min-width: 500px;
+  top: 0;
+  padding: 13px 0;
 }
 
 .text_ch span {
