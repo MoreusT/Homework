@@ -152,7 +152,7 @@ input[type=checkbox]:checked + label > span::after {
 footer {
   background-color: #3b3f45;
   color: #eb7e7f;
-  height: 35.5%;
+  height: 28.5%;
 }
 
 footer div {
