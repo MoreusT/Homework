@@ -84,6 +84,10 @@ input[type=checkbox]:checked + label > span::after {
   background-color: #7a7593;
 }
 
+.custom_ch {
+  position: relative;
+}
+
 .custom_ch::before {
   content: "";
   width: 25px;
@@ -103,9 +107,9 @@ input[type=checkbox]:checked + label > span::after {
   border-bottom: 5px solid transparent;
   border-left: 5px solid transparent;
   transform: rotate(-52deg);
-  position: relative;
-  left: 17px;
-  top: -35px;
+  position: absolute;
+  left: -13px;
+  top: 7px;
 }
 
 .shop_list li input {
@@ -152,7 +156,7 @@ input[type=checkbox]:checked + label > span::after {
 footer {
   background-color: #3b3f45;
   color: #eb7e7f;
-  height: 28.5%;
+  height: 35%;
 }
 
 footer div {
