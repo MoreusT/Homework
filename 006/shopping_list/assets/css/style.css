@@ -97,15 +97,15 @@ input[type=checkbox]:checked + label > span::after {
 
 .custom_ch::after {
   content: "";
-  display: inline-block;
+  display: block;
   width: 12px;
   height: 5px;
   border-bottom: 5px solid transparent;
   border-left: 5px solid transparent;
   transform: rotate(-52deg);
   position: relative;
-  left: -440px;
-  top: -6px;
+  left: 17px;
+  top: -35px;
 }
 
 .shop_list li input {
