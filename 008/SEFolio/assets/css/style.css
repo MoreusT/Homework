@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+button {
+  transition: all 0.2s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 55px;
+}
+
+header h1 {
+  font-size: 30px;
+  color: #202020;
+  margin-bottom: 30px;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+}
+
+header h1 span {
+  color: #2ec06c;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.soc_list {
+  display: flex;
+  width: calc(33.3333% - 10px);
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.soc_list li {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+}
+
+.soc_list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.soc_list li a svg {
+  max-width: 53px;
+  max-height: 53px;
+}
+
+.soc_list li a:hover svg {
+  fill: #fff;
+}
+
+.facebook {
+  fill: #3b5988;
+  border-color: #3b5988;
+}
+
+.facebook:hover {
+  background-color: #3b5988;
+}
+
+.twitter {
+  fill: #00aced;
+  border-color: #00aced;
+}
+
+.twitter:hover {
+  background-color: #00aced;
+}
+
+.instagram {
+  fill: #517fa4;
+  border-color: #517fa4;
+}
+
+.instagram:hover {
+  background-color: #517fa4;
+}
+
+.dribbble {
+  fill: #ff0084;
+  border-color: #ff0084;
+}
+
+.dribbble:hover {
+  background-color: #ff0084;
+}
+
+.form_wrap {
+  width: calc(66.6666% - 10px);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form_wrap .row:last-child {
+  margin-bottom: 0;
+}
+
+.column {
+  width: calc(50% - 10px);
+}
+
+.w100 {
+  width: 100%;
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  padding: 0 22px;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #bababa;
+  border-radius: 4px;
+  outline: 0;
+}
+
+textarea {
+  padding: 15px 22px;
+  height: 160px;
+  resize: none;
+  padding-right: 50px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #2ec06c;
+  outline: 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 160px;
+  width: 40px;
+  background-color: #2ec06c;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+button:hover {
+  background-color: #269c57;
+}
+
+button svg {
+  height: 18px;
+  width: 18px;
+  fill: #fff;
+}
