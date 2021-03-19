@@ -9,15 +9,149 @@ font-family: 'PT Sans', sans-serif;
   box-sizing: border-box;
 }
 
-html,
 body {
   width: 100%;
   height: 100%;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+
 .container {
   width: 90%;
-  max-width: 941px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
+.content {
+  margin-top: 140px;
+}
+
+.toptext {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #898f99;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 4.3px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0ec8cb;
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 26px;
+}
+
+.tagline {
+  text-transform: uppercase;
+  text-align: center;
+  color: #999999;
+  font-size: 18px;
+  max-width: 515px;
+  margin: 0 auto;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  margin-bottom: 98px;
+}
+
+#dignity_list {
+  height: 420px;
+}
+
+#dignity_list li {
+  display: inline-block;
+  width: 25%;
+  margin: 0 -2px;
+  text-align: center;
+  border: 1px solid #ececec;
+  background-color: #f7f7f7;
+  padding: 55px 26px 80px;
+}
+
+#dignity_list .icon_wrap {
+  margin-bottom: 34px;
+}
+
+#dignity_list .icon {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-image: url("../images/sprite.png");
+  background-repeat: no-repeat;
+}
+
+#dignity_list li:hover {
+  background-color: #0ec8cb;
+  border-color: #0ec8cb;
+}
+
+#dignity_list li:hover * {
+  color: #fff;
+}
+
+#dignity_list li:hover .icon_anchor {
+  background-position: 0 -119px;
+}
+
+.icon_diamond {
+  background-position: -116px 0;
+}
+
+#dignity_list li:hover .icon_diamond {
+  background-position: -116px -119px;
+}
+
+.icon_eyeglasses {
+  background-position: -234px 8px;
+}
+
+#dignity_list li:hover .icon_eyeglasses {
+  background-position: -234px -111px;
+}
+
+.icon_monitor {
+  background-position: -351px 6px;
+}
+
+#dignity_list li:hover .icon_monitor {
+  background-position: -351px -113px;
+}
+
+#dignity_list .cellfix {
+  display: table;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#dignity_list h3 {
+  font-family: "Montserrat", sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  line-height: 25px;
+}
+
+#dignity_list p {
+  color: #777777;
+  line-height: 22px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: manual;
+}
