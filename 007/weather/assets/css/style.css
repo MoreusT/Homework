@@ -102,7 +102,7 @@ ul li .weather i {
   font-size: 40px;
 }
 
-ul li:not(:hover) {
+ul:hover li:not(:hover) {
   opacity: .7;
 }
 
