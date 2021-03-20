@@ -106,12 +106,6 @@ ul li:not(:hover) {
   opacity: .7;
 }
 
-.city1,
-.city2,
-.city3 {
-  margin-top: 0;
-}
-
 .city1 .city_outside {
   background-color: #3399cc;
 }
