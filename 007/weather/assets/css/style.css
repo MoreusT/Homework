@@ -18,6 +18,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 
 body {
   width: 100%;
@@ -67,14 +70,17 @@ main {
 }
 
 ul {
-  padding: 6px;
+  padding: 3px;
 }
 
 ul li {
   display: inline-block;
   width: 25%;
   text-align: center;
-  margin: 6px -2px 0 0;
+  padding: 3px;
+}
+
+ul li .city_outside {
   padding: 25px 0;
 }
 
@@ -106,47 +112,47 @@ ul li:not(:hover) {
   margin-top: 0;
 }
 
-.city1 {
+.city1 .city_outside {
   background-color: #3399cc;
 }
 
-.city2 {
+.city2 .city_outside {
   background-color: #33cccc;
 }
 
-.city3 {
+.city3 .city_outside {
   background-color: #996699;
 }
 
-.city4 {
+.city4 .city_outside {
   background-color: #c24747;
 }
 
-.city5 {
+.city5 .city_outside {
   background-color: #e2674a;
 }
 
-.city6 {
+.city6 .city_outside {
   background-color: #ffcc66;
 }
 
-.city7 {
+.city7 .city_outside {
   background-color: #99cc99;
 }
 
-.city8 {
+.city8 .city_outside {
   background-color: #669999;
 }
 
-.city9 {
+.city9 .city_outside {
   background-color: #cc6699;
 }
 
-.city10 {
+.city10 .city_outside {
   background-color: #339966;
 }
 
-.city11 {
+.city11 .city_outside {
   background-color: #666699;
 }
 
