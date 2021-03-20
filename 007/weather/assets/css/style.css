@@ -1,23 +1,155 @@
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("../font/lucida-grande.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lucida Sans Unicode";
+  src: url("../font/lucida-sans-unicode.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    width: 100%;
-    height: 100vh;
-    border: 25px solid #2b81ac;
-    background-color: #3399cc;
-  }
-  
-  ul,
-  ol {
-    list-style: none;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 985px;
-    margin: 0 auto;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  border: 25px solid #2b81ac;
+  background-color: #3399cc;
+  font-size: 26px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  transition: all 0.1s ease-in;
+}
+
+.container {
+  width: 90%;
+  max-width: 985px;
+  margin: 0 auto;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+header {
+  margin: 25px 0;
+}
+
+h1 {
+  font-size: 31px;
+  font-weight: 600;
+}
+
+main {
+  background-color: #fff;
+  margin-bottom: 22px;
+}
+
+ul {
+  padding: 6px;
+}
+
+ul li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  margin: 6px -2px 0 0;
+  padding: 25px 0;
+}
+
+ul li .city_name {
+  margin-bottom: 13px;
+}
+
+ul li .weather {
+  position: relative;
+  top: -5px;
+}
+
+.wi {
+  position: relative;
+  top: 5px;
+}
+
+ul li .weather i {
+  font-size: 40px;
+}
+
+ul li:not(:hover) {
+  opacity: .7;
+}
+
+.city1,
+.city2,
+.city3 {
+  margin-top: 0;
+}
+
+.city1 {
+  background-color: #3399cc;
+}
+
+.city2 {
+  background-color: #33cccc;
+}
+
+.city3 {
+  background-color: #996699;
+}
+
+.city4 {
+  background-color: #c24747;
+}
+
+.city5 {
+  background-color: #e2674a;
+}
+
+.city6 {
+  background-color: #ffcc66;
+}
+
+.city7 {
+  background-color: #99cc99;
+}
+
+.city8 {
+  background-color: #669999;
+}
+
+.city9 {
+  background-color: #cc6699;
+}
+
+.city10 {
+  background-color: #339966;
+}
+
+.city11 {
+  background-color: #666699;
+}
+
+footer p {
+    font-size: 22px;
+}
