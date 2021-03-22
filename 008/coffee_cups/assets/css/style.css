@@ -45,7 +45,7 @@ li {
     min-height: 440px;
     height: 100%;
     margin-top: 30px;
-    padding: 24px 0;
+    padding: 24px 0 28px;
 }
 
 li:last-child {
