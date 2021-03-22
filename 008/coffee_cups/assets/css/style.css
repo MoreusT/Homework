@@ -29,7 +29,6 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    min-height: 500px;
 }
 
 li {
