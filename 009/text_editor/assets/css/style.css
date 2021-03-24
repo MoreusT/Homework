@@ -59,6 +59,7 @@ ol {
   font-size: 48px;
   margin-top: -6px;
   padding-bottom: 10px;
+  outline: none;
 }
 
 .te_edit_block {
