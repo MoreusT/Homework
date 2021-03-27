@@ -71,6 +71,11 @@ input[type=checkbox]:checked + label > span::after {
   border-color: #fff;
 }
 
+.shop_list li:active,
+.shop_list li:nth-child(2n):active {
+  background-color: #eb7e7f;
+}
+
 .shop_list li:nth-child(2n) {
   background-color: #7a7593;
 }
