@@ -77,6 +77,8 @@ ol {
 .flip_container {
   perspective: 1000px;
   margin-bottom: 17px;
+  width: 100%;
+  height: 267px;
 }
 
 .flip_container:hover .flipper,
@@ -84,18 +86,13 @@ ol {
   transform: rotateY(180deg);
 }
 
-.flip_container,
-.front,
-.back {
-  width: 100%;
-  height: 267px;
-}
-
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
 
   position: relative;
+
+  height: 100%;
 }
 
 .front,
@@ -105,6 +102,9 @@ ol {
   position: absolute;
   top: 0;
   left: 0;
+
+  width: 100%;
+  height: 100%;
 }
 
 .front {
@@ -120,22 +120,23 @@ ol {
 .back {
   transform: rotateY(180deg);
   background-color: #18b5dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20%;
 }
 
 .soc_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 0 20%;
 }
 
 .soc_link {
   background-color: #5ecbe7;
   height: 42px;
   width: 42px;
-  margin-right: 5px;
+  margin: 2.5px;
   text-align: center;
   line-height: 42px;
 }
@@ -144,10 +145,6 @@ ol {
   transform: scale(1.1);
   transition: all 0.2s ease;
   box-shadow: 0 0px 2px 2px #fff;
-}
-
-.soc_link:last-child {
-  margin-right: 0;
 }
 
 .soc_link a {
