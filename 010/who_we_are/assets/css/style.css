@@ -24,8 +24,8 @@ ol {
 }
 
 .who_section {
-    background-color: #f6f6f6;
-    padding: 100px 0;
+  background-color: #f6f6f6;
+  padding: 100px 0;
 }
 
 .who_header {
@@ -71,7 +71,7 @@ ol {
 }
 
 .flip_card:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .flip_container {
@@ -132,22 +132,22 @@ ol {
 }
 
 .soc_link {
-    background-color: #5ecbe7;
-    height: 42px;
-    width: 42px;
-    margin-right: 5px;
-    text-align: center;
-    line-height: 42px;
+  background-color: #5ecbe7;
+  height: 42px;
+  width: 42px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 42px;
 }
 
 .soc_link:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease;
-    box-shadow: 0 0px 2px 2px #fff;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  box-shadow: 0 0px 2px 2px #fff;
 }
 
 .soc_link:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .soc_link a {
