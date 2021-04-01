@@ -81,6 +81,14 @@ img {
   transform: scale(1.2);
 }
 
+.blog_post a {
+  color: #fff;
+}
+
+.blog_post a:visited {
+  color: #fff;
+}
+
 .blog_post a img {
   width: 100%;
 }
