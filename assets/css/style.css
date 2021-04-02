@@ -45,6 +45,7 @@ h1 {
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   padding-bottom: 30px;
 }
 
