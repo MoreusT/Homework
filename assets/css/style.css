@@ -50,6 +50,7 @@ ul {
 
 li {
   width: calc(15% - 10px);
+  min-width: 153px;
   margin: 10px;
   border: 1px solid #efefef;
   padding: 10px;
