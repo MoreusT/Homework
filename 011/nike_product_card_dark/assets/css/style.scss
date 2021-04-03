@@ -15,8 +15,7 @@ $brdr-color: #4f5560;
 
 .product {
   height: 100%;
-  background: #c5c5c8, url(../images/main_bg.png);
-  background-size: cover;
+  background: #c5c5c8, url(../images/main_bg.png) /cover;
   font-family: "Museo Sans Rounded", sans-serif;
   color: $main-color;
   display: flex;
