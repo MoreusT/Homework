@@ -18,13 +18,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100%;
 }
 
 body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   border: 25px solid #2b81ac;
   background-color: #3399cc;
   font-size: 26px;
@@ -71,6 +72,8 @@ main {
 
 ul {
   padding: 3px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ul li {
@@ -150,6 +153,22 @@ ul:hover li:not(:hover) {
   background-color: #666699;
 }
 
+footer {
+  padding-bottom: 10px;
+}
+
 footer p {
     font-size: 22px;
+}
+
+@media screen and (max-width:765px) {
+  ul li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ul li, .w50 {
+    width: 100%;
+  }
 }
