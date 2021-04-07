@@ -121,7 +121,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 8%;
+  width: 4%;
   height: 100%;
   background-color: rgba(249, 248, 251, 0.7);
   backdrop-filter: blur(3px);
@@ -296,6 +296,15 @@ body {
   background-color: #e63300;
 }
 
+@media screen and (max-width: 1860px) {
+  .home__text-block {
+    text-shadow: 0 0 3px white;
+  }
+
+  .about__text-block {
+    text-shadow: 0 0 3px black;
+  }
+}
 @media screen and (max-width: 960px) {
   .menu__item {
     margin-right: 20px;
@@ -308,5 +317,9 @@ body {
 
   .hamburger {
     display: block;
+  }
+
+  #to-top {
+    display: none;
   }
 }
