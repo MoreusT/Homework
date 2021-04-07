@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a, button {
+  transition: all 0.2s ease;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.text {
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 90px;
+}
+
+.hamburger {
+  display: none;
+}
+
+#mobile-menu-shadow {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
+  z-index: 200;
+}
+
+.first-screen {
+  background: #f9f8fb url(../images/strawberry.jpg) right 38.2% bottom no-repeat;
+}
+
+.header {
+  height: 150px;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+.header .container {
+  height: 100%;
+}
+.header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header__logo {
+  color: #262626;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 400;
+}
+.header.fixed {
+  height: 60px;
+  box-shadow: 0 0 3px #999;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+}
+.header.fixed .header__logo {
+  font-size: 32px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu__item {
+  margin-right: 37.5px;
+}
+.menu__item--last {
+  margin-right: 0;
+}
+.menu__link {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #262626;
+  font-size: 16px;
+}
+
+.home {
+  position: relative;
+  padding: 350px 0 384px;
+}
+.home__title {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.home__text {
+  line-height: 27px;
+  font-weight: 300;
+  max-width: 375px;
+  margin-bottom: 27px;
+}
+
+.about {
+  background: #00baba url(../images/strawberry_plate.png) top 62% left 32% no-repeat;
+  padding: 160px 0 212px;
+}
+.about .flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.about__title {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.about__text {
+  max-width: 501px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 25px;
+  height: 40px;
+  bottom: 68px;
+  margin-left: -12px;
+  box-shadow: inset 0 0 0 1px #000;
+  border-radius: 15px;
+}
+.icon-scroll:before {
+  content: "";
+  width: 4px;
+  height: 11px;
+  background: #000;
+  top: 6px;
+  left: 10.7px;
+  border-radius: 3px;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+.btn {
+  font-size: 20px;
+  font-weight: 300;
+  width: 200px;
+  height: 55px;
+  display: block;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.btn--orange {
+  background-color: #ff6033;
+}
+.btn--orange:hover {
+  background-color: #e63300;
+}
