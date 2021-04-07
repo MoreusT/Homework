@@ -13,18 +13,18 @@ $(function () {
         $("body").toggleClass("open")
     });
 
-    $(".mobile_menu a").on("click", function () {
+    $(".mob-menu__link").on("click", function () {
         $(".hamburger").removeClass("is-active")
         $("body").toggleClass("open")
     });
 
-    $(".mobile_menu a, .main_menu a").on("click", function (e) {
+    $(".menu__link, .mob-menu__link").on("click", function (e) {
         e.preventDefault();
         let top = $($(this).attr("href")).offset().top;
         $("html, body").animate({ scrollTop: top }, 400);
     });
 
-    $("#to_top").on("click", function () {
+    $("#to-top").on("click", function () {
         $("html, body").animate({ scrollTop: 0 }, 400);
     })
 });
