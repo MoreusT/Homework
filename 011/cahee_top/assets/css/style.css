@@ -204,6 +204,10 @@ body {
   position: relative;
   padding: 350px 0 384px;
 }
+.home__text-block {
+  max-width: 375px;
+  margin-bottom: 27px;
+}
 .home__title {
   font-weight: 900;
   font-size: 60px;
@@ -212,8 +216,6 @@ body {
 .home__text {
   line-height: 27px;
   font-weight: 300;
-  max-width: 375px;
-  margin-bottom: 27px;
 }
 
 .about {
@@ -224,14 +226,16 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+.about__text-block {
+  max-width: 501px;
+  margin-bottom: 14px;
+}
 .about__title {
   color: #fff;
   margin-bottom: 10px;
 }
 .about__text {
-  max-width: 501px;
   color: #fff;
-  margin-bottom: 14px;
 }
 
 .icon-scroll,
