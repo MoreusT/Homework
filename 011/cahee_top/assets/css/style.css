@@ -228,11 +228,22 @@ body {
 
 .home {
   position: relative;
-  padding: 350px 0 384px;
+  height: 100vh;
+}
+.home .container {
+  height: 100%;
+}
+.home .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
 }
 .home__text-block {
   max-width: 375px;
-  margin-bottom: 27px;
+  padding: 10px;
+  margin-bottom: 17px;
 }
 .home__title {
   font-weight: 900;
@@ -250,11 +261,14 @@ body {
 }
 .about .flex {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 .about__text-block {
   max-width: 501px;
   margin-bottom: 14px;
+  padding: 10px;
 }
 .about__title {
   color: #fff;
@@ -324,11 +338,13 @@ body {
 
 @media screen and (max-width: 1860px) {
   .home__text-block {
-    text-shadow: 0 0 3px white;
+    background-color: rgba(249, 248, 251, 0.6);
+    box-shadow: 0 0 3px #f9f8fb;
   }
 
   .about__text-block {
-    text-shadow: 0 0 3px black;
+    background-color: rgba(0, 186, 186, 0.6);
+    box-shadow: 0 0 3px #00baba;
   }
 }
 @media screen and (max-width: 960px) {
@@ -337,6 +353,10 @@ body {
   }
 }
 @media screen and (max-width: 760px) {
+  .first-screen {
+    background: #f9f8fb url(../images/strawberry.jpg) right bottom/cover no-repeat;
+  }
+
   .menu {
     display: none;
   }
@@ -351,5 +371,10 @@ body {
 
   #to-top-mobile {
     display: block;
+  }
+
+  .about {
+    background: #00baba url(../images/strawberry_plate.png) top left/cover no-repeat;
+    padding: 100px 0 131px;
   }
 }
