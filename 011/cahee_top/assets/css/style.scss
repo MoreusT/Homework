@@ -358,6 +358,10 @@ body {
     background: $bgc-main url(../images/strawberry.jpg) right bottom /
       cover no-repeat;
   }
+  .header {
+    height: 80px;
+  }
+
   .menu {
     display: none;
   }
