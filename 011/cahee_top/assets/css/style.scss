@@ -353,6 +353,12 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .icon-scroll {
+    bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 760px) {
   body {
     font-size: 18px;
