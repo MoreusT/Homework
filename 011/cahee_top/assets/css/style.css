@@ -388,6 +388,11 @@ body {
 }
 @media screen and (max-width: 602px) {
   .about {
-    background: #00baba url(../images/strawberry_plate.png) left/cover no-repeat;
+    background: #00baba url(../images/strawberry_plate.png) center center/cover no-repeat;
+  }
+}
+@media screen and (max-width: 465px) {
+  .title {
+    font-size: 60px;
   }
 }

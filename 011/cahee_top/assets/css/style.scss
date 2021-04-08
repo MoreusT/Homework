@@ -385,7 +385,13 @@ body {
 
 @media screen and (max-width: 602px) {
   .about {
-    background: $bgc-about url(../images/strawberry_plate.png) left / cover
+    background: $bgc-about url(../images/strawberry_plate.png) center center / cover
       no-repeat;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .title {
+    font-size: 60px;
   }
 }
