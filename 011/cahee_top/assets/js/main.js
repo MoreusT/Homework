@@ -24,7 +24,7 @@ $(function () {
         $("html, body").animate({ scrollTop: top }, 400);
     });
 
-    $("#to-top").on("click", function () {
+    $("#to-top, #to-top-mobile").on("click", function () {
         $("html, body").animate({ scrollTop: 0 }, 400);
     })
 });

@@ -125,6 +125,32 @@ body {
   }
 }
 
+#to-top-mobile {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 16px;
+    left: 15px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+  &:active, &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
 .first-screen {
   background: $bgc-main url(../images/strawberry.jpg) right 38.2% bottom
     no-repeat;
@@ -297,7 +323,7 @@ body {
 @media screen and (max-width: 1860px) {
   .home__text-block {
     text-shadow: 0 0 3px rgba($color: #fff, $alpha: 1);
-  } 
+  }
   .about__text-block {
     text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1);
   }
@@ -318,5 +344,8 @@ body {
   }
   #to-top {
     display: none;
-  }  
+  }
+  #to-top-mobile {
+    display: block;
+  }
 }
