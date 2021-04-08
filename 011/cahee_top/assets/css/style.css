@@ -137,10 +137,10 @@ body {
 #to-top-mobile {
   display: none;
   position: fixed;
-  right: 20px;
-  bottom: 15px;
-  width: 40px;
-  height: 40px;
+  right: 25px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -148,12 +148,12 @@ body {
   content: "";
   position: absolute;
   display: block;
-  top: 16px;
-  left: 15px;
+  top: 21px;
+  left: 17.5px;
   border-left: 2px solid #000;
   border-top: 2px solid #000;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   transform: rotate(45deg);
 }
 #to-top-mobile:active, #to-top-mobile:hover {
