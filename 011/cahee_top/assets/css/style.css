@@ -401,3 +401,8 @@ body {
     bottom: 20px;
   }
 }
+@media screen and (max-height: 500px) {
+  .home {
+    padding: 100px 0;
+  }
+}
