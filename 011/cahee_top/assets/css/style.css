@@ -386,3 +386,8 @@ body {
     padding: 100px 0 131px;
   }
 }
+@media screen and (max-width: 604px) {
+  .about {
+    background: #00baba url(../images/strawberry_plate.png) left/cover no-repeat;
+  }
+}
