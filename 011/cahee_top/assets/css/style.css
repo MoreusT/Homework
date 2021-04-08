@@ -382,7 +382,7 @@ body {
   }
 
   .about {
-    background: #00baba url(../images/strawberry_plate.png) left/cover no-repeat;
+    background: #00baba url(../images/strawberry_plate.png) left/contain no-repeat;
     padding: 100px 0 131px;
   }
 }

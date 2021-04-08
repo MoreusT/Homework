@@ -377,7 +377,7 @@ body {
     display: block;
   }
   .about {
-    background: $bgc-about url(../images/strawberry_plate.png) left / cover
+    background: $bgc-about url(../images/strawberry_plate.png) left / contain
       no-repeat;
     padding: 100px 0 131px;
   }
