@@ -403,7 +403,13 @@ body {
 }
 
 @media screen and (max-height: 500px) {
+  .header {
+    height: 80px;
+  }
+
   .home {
-    padding: 100px 0;
+    &__text-block {
+      margin-top: 50px;
+    }
   }
 }

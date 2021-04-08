@@ -402,7 +402,11 @@ body {
   }
 }
 @media screen and (max-height: 500px) {
-  .home {
-    padding: 100px 0;
+  .header {
+    height: 80px;
+  }
+
+  .home__text-block {
+    margin-top: 50px;
   }
 }
