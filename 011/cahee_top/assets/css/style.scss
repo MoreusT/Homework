@@ -355,13 +355,12 @@ body {
 
 @media screen and (max-width: 760px) {
   .first-screen {
-    background: $bgc-main url(../images/strawberry.jpg) right bottom /
-      cover no-repeat;
+    background: $bgc-main url(../images/strawberry.jpg) right bottom / cover
+      no-repeat;
   }
   .header {
     height: 80px;
   }
-
   .menu {
     display: none;
   }
@@ -374,7 +373,6 @@ body {
   #to-top-mobile {
     display: block;
   }
-
   .about {
     background: $bgc-about url(../images/strawberry_plate.png) top left / cover
       no-repeat;
