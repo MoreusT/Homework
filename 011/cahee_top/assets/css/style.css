@@ -352,11 +352,6 @@ body {
     margin-right: 20px;
   }
 }
-@media screen and (max-width: 800px) {
-  .icon-scroll {
-    bottom: 20px;
-  }
-}
 @media screen and (max-width: 760px) {
   body {
     font-size: 18px;
@@ -399,5 +394,10 @@ body {
 @media screen and (max-width: 465px) {
   .title {
     font-size: 60px;
+  }
+}
+@media screen and (max-height: 800px) {
+  .icon-scroll {
+    bottom: 20px;
   }
 }

@@ -180,7 +180,7 @@ body {
   }
   &.fixed {
     height: 60px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     background-color: rgba($color: $bgc-main, $alpha: 0.7);
     backdrop-filter: blur(3px);
     .header__logo {
@@ -353,12 +353,6 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .icon-scroll {
-    bottom: 20px;
-  }
-}
-
 @media screen and (max-width: 760px) {
   body {
     font-size: 18px;
@@ -391,13 +385,19 @@ body {
 
 @media screen and (max-width: 602px) {
   .about {
-    background: $bgc-about url(../images/strawberry_plate.png) center center / cover
-      no-repeat;
+    background: $bgc-about url(../images/strawberry_plate.png) center center /
+      cover no-repeat;
   }
 }
 
 @media screen and (max-width: 465px) {
   .title {
     font-size: 60px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .icon-scroll {
+    bottom: 20px;
   }
 }
