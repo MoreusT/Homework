@@ -354,6 +354,9 @@ body {
 }
 
 @media screen and (max-width: 760px) {
+  body {
+    font-size: 18px;
+  }
   .first-screen {
     background: $bgc-main url(../images/strawberry.jpg) right bottom / cover
       no-repeat;
@@ -374,7 +377,7 @@ body {
     display: block;
   }
   .about {
-    background: $bgc-about url(../images/strawberry_plate.png) top left / cover
+    background: $bgc-about url(../images/strawberry_plate.png) left / cover
       no-repeat;
     padding: 100px 0 131px;
   }

@@ -353,6 +353,10 @@ body {
   }
 }
 @media screen and (max-width: 760px) {
+  body {
+    font-size: 18px;
+  }
+
   .first-screen {
     background: #f9f8fb url(../images/strawberry.jpg) right bottom/cover no-repeat;
   }
@@ -378,7 +382,7 @@ body {
   }
 
   .about {
-    background: #00baba url(../images/strawberry_plate.png) top left/cover no-repeat;
+    background: #00baba url(../images/strawberry_plate.png) left/cover no-repeat;
     padding: 100px 0 131px;
   }
 }
