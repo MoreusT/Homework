@@ -95,7 +95,7 @@ body {
 }
 
 .mob-menu {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   overflow-y: scroll;
 }
 .mob-menu__item {
@@ -229,6 +229,7 @@ body {
 .home {
   position: relative;
   height: 100vh;
+  padding: 200px 0 250px;
 }
 .home .container {
   height: 100%;
@@ -241,6 +242,7 @@ body {
   height: 100%;
 }
 .home__text-block {
+  margin-top: 40px;
   max-width: 375px;
   padding: 10px;
   margin-bottom: 17px;
@@ -404,9 +406,5 @@ body {
 @media screen and (max-height: 500px) {
   .header {
     height: 80px;
-  }
-
-  .home__text-block {
-    margin-top: 50px;
   }
 }
