@@ -43,6 +43,148 @@ body {
   font-size: 90px;
 }
 
+.contact {
+  background: #fff url(../images/contact_bg.jpg) center center/cover no-repeat;
+  text-align: center;
+  color: #262626;
+  padding: 80px 0 47px;
+}
+.contact .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.contact_title {
+  margin-bottom: 22px;
+}
+.contact_description {
+  margin: 0 auto 39px;
+  max-width: 350px;
+  line-height: 25px;
+}
+
+.form_part {
+  text-align: left;
+  width: 42.7%;
+  padding-top: 6px;
+}
+.form_part .form_tarea {
+  font-family: "Raleway", sans-serif;
+  padding: 17px 15px;
+  background-color: rgba(0, 196, 196, 0.4);
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 250px;
+  font-size: 15px;
+  font-weight: 700;
+  border-left: 5px solid transparent;
+  outline: none;
+  margin-bottom: 15px;
+  resize: none;
+}
+.form_part .form_tarea::placeholder {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+.form_part .form_tarea:focus, .form_part .form_tarea:active, .form_part .form_tarea:hover {
+  background-color: #00c4c4;
+  border-color: #355b82;
+}
+.form_part .btn {
+  border: none;
+}
+
+.floating {
+  margin-bottom: 15px;
+}
+.floating__input {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  width: 100%;
+  font-weight: 700;
+  padding: 16px 15px;
+  font-size: 15px;
+  background-color: rgba(0, 196, 196, 0.4);
+  border: none;
+  border-left: 5px solid transparent;
+  outline: none;
+}
+.floating__input::placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+.floating__input:focus, .floating__input:active, .floating__input:hover {
+  background-color: #00c4c4;
+  border-color: #355b82;
+}
+.floating__label {
+  color: #fff;
+  display: block;
+  position: relative;
+  max-height: 0;
+  font-weight: 300;
+  font-size: 15px;
+  pointer-events: none;
+}
+.floating__label::before {
+  content: attr(data-content);
+  display: inline-block;
+  backface-visibility: hidden;
+  transform-origin: left top;
+  transition: transform 0.2s ease;
+  left: 20px;
+  position: relative;
+}
+.floating__input:focus + .floating__label::after {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+.floating__input:placeholder-shown + .floating__label::before {
+  transform: translate3d(0, -34px, 0) scale3d(1, 1, 1);
+}
+.floating__label::before, .floating__input:focus + .floating__label::before {
+  transform: translate3d(0, -48px, 0) scale3d(0.82, 0.82, 1);
+}
+.floating__input:focus + .floating__label::before {
+  color: #fff;
+}
+.floating .hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.contact_part {
+  text-align: left;
+  width: 42.7%;
+}
+.contact_part .credo {
+  margin-bottom: 11px;
+  line-height: 25px;
+}
+.contact_part .credo:last-of-type {
+  margin-bottom: 0;
+}
+.contact_part .credo_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -1px;
+}
+.contact_part .credo_link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #262626;
+}
+
 .cahee_footer {
   padding: 30px 0;
   background-color: #262626;
@@ -89,8 +231,8 @@ body {
 }
 
 .btn--blue {
-  background-color: #67a6cc;
+  background-color: #367fbb;
 }
 .btn--blue:hover {
-  background-color: #3a81ad;
+  background-color: #255780;
 }

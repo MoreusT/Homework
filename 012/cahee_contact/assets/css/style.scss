@@ -1,5 +1,4 @@
 @import "reset";
-
 //fonts
 $logo-ff: "Pacifico", cursive;
 $main-ff: "Raleway", sans-serif;
@@ -7,8 +6,11 @@ $main-ff: "Raleway", sans-serif;
 $header-col: #262626;
 $footer-col: #b9b9b9;
 $clbl-col: #fff;
+//form color
+$input-bgc: #00c4c4;
+$input-brdr-bgc: #355b82;
 //buttons
-$bgc-btn-4: #67a6cc;
+$bgc-btn-4: #367fbb;
 
 body {
   font-family: $main-ff;
@@ -31,7 +33,153 @@ body {
   font-size: 90px;
 }
 
+.contact {
+  background: #fff url(../images/contact_bg.jpg) center center / cover no-repeat;
+  text-align: center;
+  color: $header-col;
+  padding: 80px 0 47px;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  &_title {
+    margin-bottom: 22px;
+  }
+  &_description {
+    margin: 0 auto 39px;
+    max-width: 350px;
+    line-height: 25px;
+  }
+}
 
+.form_part {
+  text-align: left;
+  width: 42.7%;
+  padding-top: 6px;
+  .form_tarea {
+    font-family: $main-ff;
+    padding: 17px 15px;
+    background-color: rgba($color: $input-bgc, $alpha: 0.4);
+    border: none;
+    color: $clbl-col;
+    width: 100%;
+    height: 250px;
+    font-size: 15px;
+    font-weight: 700;
+    border-left: 5px solid transparent;
+    outline: none;
+    margin-bottom: 15px;
+    resize: none;
+
+    &::placeholder {
+      font-weight: 300;
+      color: rgba($color: $clbl-col, $alpha: 0.8);
+    }
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: rgba($color: $input-bgc, $alpha: 1);
+      border-color: $input-brdr-bgc;
+    }
+  }
+  .btn {
+    border: none;
+  }
+}
+
+.floating {
+  margin-bottom: 15px;
+  &__input {
+    font-family: $main-ff;
+    color: $clbl-col;
+    width: 100%;
+    font-weight: 700;
+    padding: 16px 15px;
+    font-size: 15px;
+    background-color: rgba($color: $input-bgc, $alpha: 0.4);
+    border: none;
+    border-left: 5px solid transparent;
+    outline: none;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0);
+    }
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: rgba($color: $input-bgc, $alpha: 1);
+      border-color: $input-brdr-bgc;
+    }
+  }
+  &__label {
+    color: $clbl-col;
+    display: block;
+    position: relative;
+    max-height: 0;
+    font-weight: 300;
+    font-size: 15px;
+    pointer-events: none;
+    &::before {
+      content: attr(data-content);
+      display: inline-block;
+      backface-visibility: hidden;
+      transform-origin: left top;
+      transition: transform 0.2s ease;
+      left: 20px;
+      position: relative;
+    }
+  }
+  &__input:focus + &__label::after {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+  &__input:placeholder-shown + &__label::before {
+    transform: translate3d(0, -34px, 0) scale3d(1, 1, 1);
+  }
+  &__label::before,
+  &__input:focus + &__label::before {
+    transform: translate3d(0, -48px, 0) scale3d(0.82, 0.82, 1);
+  }
+  &__input:focus + &__label::before {
+    color: #fff;
+  }
+  .hidden--visually {
+    border: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
+
+.contact_part {
+  text-align: left;
+  width: 42.7%;
+  .credo {
+    margin-bottom: 11px;
+    line-height: 25px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &_title {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: -1px;
+    }
+    &_link {
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 700;
+      color: $header-col;
+    }
+  }
+}
 
 .cahee_footer {
   padding: 30px 0;

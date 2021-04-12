@@ -18,11 +18,53 @@
 <body>
     <section class="contact">
         <div class="container">
-            <h2 class="title">Contact</h2>
-            <p class="text description">For new projects, ideas, business or anything
+            <h2 class="title contact_title">Contact</h2>
+            <p class="text contact_description">For new projects, ideas, business or anything
                 you'd like to discuss, contact with me!</p>
-            <div class="wrapper">
-                <form action="#" class="contact_form"></form>
+            <div class="flex">
+                <div class="form_part">
+                    <form action="#" class="contact_form" name="contact_form" method="POST">
+                        <div class="floating">
+                            <input type="text" id="urname" class="floating__input" name="urname" placeholder="Your name"
+                                required />
+                            <label for="urname" class="floating__label" data-content="Your name">
+                                <span class="hidden--visually">Your name</span>
+                            </label>
+                        </div>
+                        <div class="floating">
+                            <input type="email" id="uremail" class="floating__input" name="uremail"
+                                placeholder="Your email" required />
+                            <label for="uremail" class="floating__label" data-content="Your email">
+                                <span class="hidden--visually">Your email</span>
+                            </label>
+                        </div>
+                        <div class="floating">
+                            <input type="text" id="urnumber" class="floating__input" name="urnumber"
+                                placeholder="Your phone number" required />
+                            <label for="urnumber" class="floating__label" data-content="Your phone number">
+                                <span class="hidden--visually">Your phone number</span>
+                            </label>
+                        </div>
+                        <textarea class="form_tarea" name="Your message" id="urmessage" placeholder="Your message..."
+                            required></textarea>
+                        <button class="btn btn--blue"type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contact_part">
+                    <div class="credo">
+                        <div class="credo_title">Address</div>
+                        <a class="credo_link" href="https://goo.gl/maps/APDtLq1cSNZE4K539">123 City name, Street, City,
+                            Country</a>
+                    </div>
+                    <div class="credo">
+                        <div class="credo_title">Email</div>
+                        <a class="credo_link" href="mailto:cahee@domain.com">cahee@domain.com</a>
+                    </div>
+                    <div class="credo">
+                        <div class="credo_title">Phone</div>
+                        <a class="credo_link" href="tel:+0123456789">+012 345 6789</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -35,6 +77,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/plugins/mask_input/maskedinput.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
