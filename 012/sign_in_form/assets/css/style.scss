@@ -19,29 +19,32 @@ $form-bgc: #23ae92;
 .sign_in {
   color: $text_col;
   font-family: "Quicksand", sans-serif;
+  position: relative;
   width: 400px;
   height: 496px;
   background: #2d21a9 url(../images/bg_img.jpg) left top / cover no-repeat;
-  padding: 47px 70px;
+  padding: 49px 70px;
   letter-spacing: 0.6px;
   box-shadow: 0 0 20px rgba($color: #022978, $alpha: 0.1);
+  z-index: 1;
 }
 
 .shadow {
   position: absolute;
-  bottom: -5%;
-  left: 5%;
-  width: 90%;
-  height: 62px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 5px;
   background-color: rgba($color: #14283e, $alpha: 0.91);
-  box-shadow: 0 0 20px 20px rgba($color: #14283e, $alpha: 0.91);
+  box-shadow: 0 0 35px 28px rgba($color: #14283e, $alpha: 0.91);
 }
 
 .tab_list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 53px;
+  margin-bottom: 52px;
   padding: 0 1px;
   &-item {
     margin-right: 24px;
@@ -92,9 +95,21 @@ $form-bgc: #23ae92;
     font-family: "Quicksand", sans-serif;
   }
   .checksign {
-    position: relative;
     margin-right: 5px;
     margin-bottom: 44px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    left: 1px;
+    &:checked + .keepsign::after {
+      border-color: $text_col;
+    }
+  }
+
+  .keepsign {
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
     cursor: pointer;
     &::before {
       content: "";
@@ -103,8 +118,8 @@ $form-bgc: #23ae92;
       background-color: $form-bgc;
       display: block;
       position: absolute;
-      left: 0;
-      top: 0;
+      left: -23px;
+      top: 1px;
     }
     &::after {
       content: "";
@@ -115,18 +130,9 @@ $form-bgc: #23ae92;
       border-bottom: 2px solid transparent;
       position: absolute;
       transform: rotate(45deg);
-      top: 3px;
-      left: 6px;
+      top: 4px;
+      left: -17px;
     }
-    &:checked + .checksign::after {
-      border-color: $text_col;
-    }
-  }
-
-  .keepsign {
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
   }
 }
 

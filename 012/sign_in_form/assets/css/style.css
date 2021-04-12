@@ -38,29 +38,32 @@ a, button {
 .sign_in {
   color: #fbf6e4;
   font-family: "Quicksand", sans-serif;
+  position: relative;
   width: 400px;
   height: 496px;
   background: #2d21a9 url(../images/bg_img.jpg) left top/cover no-repeat;
-  padding: 47px 70px;
+  padding: 49px 70px;
   letter-spacing: 0.6px;
   box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
+  z-index: 1;
 }
 
 .shadow {
   position: absolute;
-  bottom: -5%;
-  left: 5%;
-  width: 90%;
-  height: 62px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 5px;
   background-color: rgba(20, 40, 62, 0.91);
-  box-shadow: 0 0 20px 20px rgba(20, 40, 62, 0.91);
+  box-shadow: 0 0 35px 28px rgba(20, 40, 62, 0.91);
 }
 
 .tab_list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 53px;
+  margin-bottom: 52px;
   padding: 0 1px;
 }
 .tab_list-item {
@@ -110,22 +113,33 @@ a, button {
   font-family: "Quicksand", sans-serif;
 }
 .sign_in_form .checksign {
-  position: relative;
   margin-right: 5px;
   margin-bottom: 44px;
   cursor: pointer;
+  position: relative;
+  top: 2px;
+  left: 1px;
 }
-.sign_in_form .checksign::before {
+.sign_in_form .checksign:checked + .keepsign::after {
+  border-color: #fbf6e4;
+}
+.sign_in_form .keepsign {
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+.sign_in_form .keepsign::before {
   content: "";
   width: 16px;
   height: 16px;
   background-color: #23ae92;
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -23px;
+  top: 1px;
 }
-.sign_in_form .checksign::after {
+.sign_in_form .keepsign::after {
   content: "";
   display: block;
   width: 3px;
@@ -134,16 +148,8 @@ a, button {
   border-bottom: 2px solid transparent;
   position: absolute;
   transform: rotate(45deg);
-  top: 3px;
-  left: 6px;
-}
-.sign_in_form .checksign:checked + .checksign::after {
-  border-color: #fbf6e4;
-}
-.sign_in_form .keepsign {
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
+  top: 4px;
+  left: -17px;
 }
 
 .btn {
