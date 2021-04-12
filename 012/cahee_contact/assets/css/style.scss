@@ -1,0 +1,86 @@
+@import "reset";
+
+//fonts
+$logo-ff: "Pacifico", cursive;
+$main-ff: "Raleway", sans-serif;
+//fonts color
+$header-col: #262626;
+$footer-col: #b9b9b9;
+$clbl-col: #fff;
+//buttons
+$bgc-btn-4: #67a6cc;
+
+body {
+  font-family: $main-ff;
+  font-size: 17px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.text {
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 90px;
+}
+
+
+
+.cahee_footer {
+  padding: 30px 0;
+  background-color: $header-col;
+  color: $footer-col;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .copyright {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .footer_logo {
+    font-family: $logo-ff;
+    font-size: 25px;
+  }
+  .madeby {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    span {
+      font-weight: 700;
+      color: #ff2b58;
+    }
+  }
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: 300;
+  width: 200px;
+  height: 55px;
+  display: block;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.btn--blue {
+  background-color: $bgc-btn-4;
+  &:hover {
+    background-color: darken($color: $bgc-btn-4, $amount: 15);
+  }
+}

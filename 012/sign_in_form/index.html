@@ -21,12 +21,12 @@
                     <li class="tab_list-item tab_list-item--active"><a href="#" class="tab_list-link">Sign in</a></li>
                     <li class="tab_list-item"><a href="#" class="tab_list-link">Join us</a></li>
                 </ul>
-                <form class="sign_in_form">
-                    <label class="credolabel" for="username">Username</label>
+                <form class="sign_in_form" name="sign_in_form" action="#" method="POST">
+                    <label class="credolabel" for="username" required>Username</label>
                     <input class="credoinput" type="text" name="username" id="username">
-                    <label class="credolabel" for="password">Password</label>
+                    <label class="credolabel" for="password" required>Password</label>
                     <input class="credoinput" type="password" name="password" id="password">
-                    <input class="checksign" type="checkbox" name="keepsign" id="keepsign">
+                    <input class="checksign" type="checkbox" name="keepsign" id="keepsign" value="keepsign">
                     <label class="keepsign" for="keepsign">Keep me signed in</label>
                     <button class="btn" type="submit">Sign in</button>
                 </form>
