@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in form</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="placer">
+        <div class="wrapper">
+            <div class="sign_in">
+                <ul class="tab_list">
+                    <li class="tab_list-item tab_list-item--active"><a href="#" class="tab_list-link">Sign in</a></li>
+                    <li class="tab_list-item"><a href="#" class="tab_list-link">Join us</a></li>
+                </ul>
+                <form class="sign_in_form">
+                    <label class="credolabel" for="username">Username</label>
+                    <input class="credoinput" type="text" name="username" id="username">
+                    <label class="credolabel" for="password">Password</label>
+                    <input class="credoinput" type="password" name="password" id="password">
+                    <input class="checksign" type="checkbox" name="keepsign" id="keepsign">
+                    <label class="keepsign" for="keepsign">Keep me signed in</label>
+                    <button class="btn" type="submit">Sign in</button>
+                </form>
+                <ul class="help_list">
+                    <li class="help_list-item"><a class="help_list-link" href="#">Forgot password</a></li>
+                    <li class="help_list-item"><a class="help_list-link" href="#">Create an account</a></li>
+                </ul>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+</body>
+
+</html>
