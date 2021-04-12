@@ -75,7 +75,7 @@ body {
 
     &::placeholder {
       font-weight: 300;
-      color: rgba($color: $clbl-col, $alpha: 0.8);
+      color: rgba($color: $clbl-col, $alpha: 1);
     }
     &:focus,
     &:active,

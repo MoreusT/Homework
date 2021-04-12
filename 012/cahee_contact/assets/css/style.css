@@ -86,7 +86,7 @@ body {
 }
 .form_part .form_tarea::placeholder {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 .form_part .form_tarea:focus, .form_part .form_tarea:active, .form_part .form_tarea:hover {
   background-color: #00c4c4;
