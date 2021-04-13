@@ -163,6 +163,9 @@ a, button {
   margin-bottom: 26px;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: #1a846e;
+}
 
 .help_list {
   display: flex;

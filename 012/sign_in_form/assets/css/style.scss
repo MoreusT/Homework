@@ -146,6 +146,9 @@ $form-bgc: #23ae92;
   background-color: $form-bgc;
   margin-bottom: 26px;
   cursor: pointer;
+  &:hover {
+    background-color: darken($color: $form-bgc, $amount: 10);
+  }
 }
 
 .help_list {
