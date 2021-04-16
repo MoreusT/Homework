@@ -255,9 +255,9 @@ body {
 }
 
 .about {
-  background: $bgc-about url(../images/strawberry_plate.png) top 62% left 32%
+  background: $bgc-about url(../images/strawberry_plate.png) top 62% left 33.5%
     no-repeat;
-  padding: 160px 0 212px;
+  padding: 160px 0 204px;
   .flex {
     display: flex;
     flex-direction: column;
@@ -267,7 +267,6 @@ body {
   &__text-block {
     max-width: 501px;
     margin-bottom: 14px;
-    padding: 10px;
   }
 
   &__title {
@@ -276,6 +275,7 @@ body {
   }
   &__text {
     color: #fff;
+    margin-bottom: 10px;
   }
 }
 

@@ -1,24 +1,32 @@
 @import "reset";
 @import "fonts";
+@import "services_icons";
 
 //fonts
 $logo-ff: "Pacifico", cursive;
 $main-ff: "Raleway", sans-serif;
 //fonts color
-$header-col: #262626;
+$main-col: #262626;
 $footer-col: #b9b9b9;
 $clbl-col: #fff;
 //background-color
 $bgc-main: #f9f8fb;
 $bgc-about: #00baba;
+$bgc-services: #70bfff;
+$bgc-gallery: #ffe92f;
+$bgc-subscribe: #fff;
 $bgc-blog: #b07cf7;
+//services list color
+$bgc-serv-list: #fe7816;
 //form color
 $input-bgc: #00c4c4;
 $input-brdr-bgc: #355b82;
 //buttons
 $bgc-btn-1: #ff6033;
-$bgc-btn-3: #f72b3b;
-$bgc-btn-4: #367fbb;
+$bgc-btn-2: #5585a2;
+$bgc-btn-3: #96b92c;
+$bgc-btn-4: #f72b3b;
+$bgc-btn-5: #367fbb;
 
 body {
   font-family: $main-ff;
@@ -52,7 +60,7 @@ body {
   width: 100%;
   height: 100%;
   max-width: 400px;
-  color: $header-col;
+  color: $main-col;
   background-color: $bgc-main;
   box-shadow: 0 0 5px #000;
   transition: all 0.2s ease;
@@ -108,7 +116,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    color: $header-col;
+    color: $main-col;
     width: 100%;
     &:active,
     &:hover {
@@ -182,7 +190,7 @@ body {
     height: 100%;
   }
   &__logo {
-    color: $header-col;
+    color: $main-col;
     font-family: $logo-ff;
     font-size: 50px;
     font-weight: 400;
@@ -217,7 +225,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    color: $header-col;
+    color: $main-col;
     font-size: 16px;
     position: relative;
     &::before {
@@ -263,31 +271,6 @@ body {
   }
 }
 
-.about {
-  background: $bgc-about url(../images/strawberry_plate.png) top 62% left 32%
-    no-repeat;
-  padding: 160px 0 212px;
-  .flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  &__text-block {
-    max-width: 501px;
-    margin-bottom: 14px;
-    padding: 10px;
-  }
-
-  &__title {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  &__text {
-    color: #fff;
-  }
-}
-
 .icon-scroll,
 .icon-scroll:before {
   position: absolute;
@@ -307,7 +290,7 @@ body {
     height: 11px;
     background: #000;
     top: 6px;
-    left: 11px;
+    margin-left: -2px;
     border-radius: 3px;
     animation-duration: 1.3s;
     animation-iteration-count: infinite;
@@ -322,6 +305,116 @@ body {
   100% {
     opacity: 0;
     transform: translateY(18px);
+  }
+}
+
+.about {
+  background: $bgc-about url(../images/strawberry_plate.png) top 62% left 33.5%
+    no-repeat;
+  padding: 160px 0 204px;
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__text-block {
+    max-width: 501px;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+}
+
+.services {
+  background: $bgc-services url(../images/services_bg.png) top 38.5% right 33%
+    no-repeat;
+  padding: 178px 0 152px;
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &_left-block {
+    width: 50%;
+  }
+  &_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14.5% 0 17%;
+  }
+  &_item {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba($color: #000000, $alpha: 0.5);
+    margin-bottom: 20px;
+    transition: all .2s ease;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      background-color: $bgc-serv-list;
+    }
+    &:hover .services_link {
+      color: #fff;
+    }
+  }
+  &_link {
+    color: $main-col;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-text {
+      width: 75%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    &-icon {
+      width: 25%;
+      height: 100%;
+      border-left: 1px solid #9d9d9d;
+      line-height: 100px;
+      text-align: center;
+    }
+    .icon1 {
+      font-size: 44px;
+      padding-right: 2px;
+    }
+    .icon2 {
+      font-size: 49px;
+      padding-right: 5px;
+    }
+    .icon3 {
+      font-size: 55px;
+    }
+    .icon4 {
+      font-size: 56px;
+    }
+  }
+  &_right-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 7.5%;
+  }
+  &_title {
+    color: #fff;
   }
 }
 
@@ -442,7 +535,7 @@ body {
 .contact {
   background: #fff url(../images/contact_bg.jpg) center center / cover no-repeat;
   text-align: center;
-  color: $header-col;
+  color: $main-col;
   padding: 80px 0 47px;
   .flex {
     display: flex;
@@ -581,14 +674,14 @@ body {
       font-size: 20px;
       line-height: 25px;
       font-weight: 300;
-      color: $header-col;
+      color: $main-col;
     }
   }
 }
 
 .cahee_footer {
   padding: 30px 0;
-  background-color: $header-col;
+  background-color: $main-col;
   color: $footer-col;
   .flex {
     display: flex;
@@ -639,17 +732,30 @@ body {
   }
 }
 
-.btn--red {
+.btn--less-blue {
+  background-color: $bgc-btn-2;
+  &:hover {
+    background-color: darken($color: $bgc-btn-2, $amount: 15);
+  }
+}
+
+.btn--green {
   background-color: $bgc-btn-3;
   &:hover {
     background-color: darken($color: $bgc-btn-3, $amount: 15);
   }
 }
-
-.btn--blue {
+.btn--red {
   background-color: $bgc-btn-4;
   &:hover {
     background-color: darken($color: $bgc-btn-4, $amount: 15);
+  }
+}
+
+.btn--blue {
+  background-color: $bgc-btn-5;
+  &:hover {
+    background-color: darken($color: $bgc-btn-5, $amount: 15);
   }
 }
 

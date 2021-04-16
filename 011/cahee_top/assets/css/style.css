@@ -258,8 +258,8 @@ body {
 }
 
 .about {
-  background: #00baba url(../images/strawberry_plate.png) top 62% left 32% no-repeat;
-  padding: 160px 0 212px;
+  background: #00baba url(../images/strawberry_plate.png) top 62% left 33.5% no-repeat;
+  padding: 160px 0 204px;
 }
 .about .flex {
   display: flex;
@@ -270,7 +270,6 @@ body {
 .about__text-block {
   max-width: 501px;
   margin-bottom: 14px;
-  padding: 10px;
 }
 .about__title {
   color: #fff;
@@ -278,6 +277,7 @@ body {
 }
 .about__text {
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .icon-scroll,
