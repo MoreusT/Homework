@@ -1,7 +1,7 @@
 $(function () {
     $(window).on("scroll", function () {
         // console.log($(window).scrollTop());
-        if ($(window).scrollTop() > 100) {
+        if ($(window).scrollTop() > 80) {
             $(".header").addClass("fixed");
         } else {
             $(".header").removeClass("fixed");
