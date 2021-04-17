@@ -1,0 +1,139 @@
+@import "reset";
+@import "fonts";
+@import "soc_icons";
+
+//fonts
+$main-ff: "Josefin Sans", sans-serif;
+$scndry-ff: "Aleo", serif;
+//font-size
+$base-size: 16;
+//color
+$main-col: #fff;
+$scndry-ttl-col: #fefefe;
+$text-col: #e8e8e8;
+$input-col: #999999;
+//background-color
+$header-bgc: #5474fd;
+$input-bgc: #fff;
+$third-bgc: #333333;
+$footer-bgc: #232323;
+//btn
+$bgc-btn-hov: #496bfe;
+
+@mixin fz($rem) {
+  font-size: ($rem/$base_size) + rem;
+}
+
+body {
+  font-family: $main-ff;
+  @include fz(16);
+}
+
+.container {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: $scndry-ff;
+  @include fz(36);
+}
+
+.first_screen {
+  background: #045695 url(../images/bg-img1.jpg) center center / cover no-repeat;
+  height: 100vh;
+  padding: 268px 0 130px;
+  color: $main-col;
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main_title {
+    @include fz(48);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 4px;
+  }
+  .tagline {
+    @include fz(22);
+    line-height: 26px;
+    letter-spacing: 5px;
+    margin-bottom: 46px;
+  }
+  .scroll_text {
+    @include fz(14);
+    letter-spacing: 1.6px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      transform: translateX(-50%) rotate(-45deg);
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      top: 24px;
+      left: 50%;
+    }
+  }
+}
+
+.search_box {
+  background-color: $input-bgc;
+  max-width: 650px;
+  width: 90%;
+  margin-bottom: 5.73%;
+  .search_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search_input {
+    color: darken($color: $input-col, $amount: 15);
+    font-family: $main-ff;
+    letter-spacing: 2px;
+    background-color: $input-bgc;
+    border: none;
+    outline: none;
+    width: 77.5%;
+    padding: 23px 3.5%;
+    &::placeholder {
+      text-align: center;
+      color: $input-col;
+    }
+  }
+  .search_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.5%;
+    background-color: $header-bgc;
+    border: none;
+    outline: none;
+    margin: 2px;
+    font-family: $scndry-ff;
+    @include fz(14);
+    color: $main-col;
+    text-transform: uppercase;
+    line-height: 26px;
+    cursor: pointer;
+    &-text {
+      margin-top: 3%;
+      margin-left: 15%;
+      margin-right: 10%;
+      letter-spacing: 1.3px;
+    }
+    &-icon {
+      margin-top: 2%;
+    }
+    &:hover {
+      background-color: $bgc-btn-hov;
+    }
+  }
+}
