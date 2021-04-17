@@ -17,10 +17,36 @@
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#5474fd">
 
+    <link rel="stylesheet" href="assets/css/hamburger.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
+    <div class="mobile-menu-block mmb">
+        <div class="mmb__top">
+            <div class="mmb__logo">Bhromaon</div>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav class="mmb__mobile-menu mob-menu">
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Who We Are</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">What We Do</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Travel With Us</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mobile-menu-shadow"></div>
+
+    <div id="to-top"></div>
+
+    <div id="to-top-mobile"></div>
+
     <section class="first_screen">
         <div class="flex">
             <h1 class="main_title">Bhromaon</h1>
@@ -41,6 +67,35 @@
             <div class="scroll_text">Scroll Down</div>
         </div>
     </section>
+
+    <header class="header">
+        <div class="container">
+            <div class="flex">
+                <div class="header__logo">Bhromaon</div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Who We Are</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">What We Do</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Travel With Us</a></li>
+                        <li class="menu__item menu__item--last"><a href="#" class="menu__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="why_choose_us">
+            
+        </section>
+    </main>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
