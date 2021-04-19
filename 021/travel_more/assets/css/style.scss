@@ -237,7 +237,6 @@ body {
     letter-spacing: 2px;
     background-color: $input-bgc;
     border: none;
-    outline: none;
     width: 77.5%;
     padding: 23px 3.5%;
     &::placeholder {
@@ -253,7 +252,6 @@ body {
     min-width: 80px;
     background-color: $header-bgc;
     border: none;
-    outline: none;
     margin: 2px;
     font-family: $scndry-ff;
     @include fz(14);

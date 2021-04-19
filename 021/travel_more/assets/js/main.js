@@ -13,21 +13,7 @@ function myFunction() {
   }
 }
 
-// let fixedOffset = $("header").offset().top;
-
 $(function () {
-//   $(window).scroll(function () {
-//     let fixed = $(".header"),
-//       scroll = $(window).scrollTop();
-  
-//     if (scroll >= fixedOffset) {
-//       fixed.addClass("fixed");
-//       $(".replacer").addClass("show");
-//     } else {
-//       fixed.removeClass("fixed");
-//       $(".replacer").removeClass("show");
-//     }
-//   });
 
   $(".hamburger, #mobile-menu-shadow").on("click", function () {
     $(".hamburger").toggleClass("is-active");

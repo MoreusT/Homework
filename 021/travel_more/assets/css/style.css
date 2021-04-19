@@ -330,7 +330,6 @@ body {
   letter-spacing: 2px;
   background-color: #fff;
   border: none;
-  outline: none;
   width: 77.5%;
   padding: 23px 3.5%;
 }
@@ -346,7 +345,6 @@ body {
   min-width: 80px;
   background-color: #5474fd;
   border: none;
-  outline: none;
   margin: 2px;
   font-family: "Aleo", serif;
   font-size: 0.875rem;
