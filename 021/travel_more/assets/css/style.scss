@@ -46,6 +46,14 @@ body {
   line-height: 26px;
 }
 
+.logo {
+  color: $main-col;
+  text-transform: uppercase;
+  @include fz(24);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
 .hamburger {
   display: none;
 }
@@ -283,13 +291,6 @@ body {
     align-items: center;
     height: 100%;
   }
-  &__logo {
-    color: $main-col;
-    text-transform: uppercase;
-    @include fz(24);
-    font-weight: 700;
-    letter-spacing: 1.2px;
-  }
   // &.fixed {
   //   height: 60px;
   //   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -335,7 +336,7 @@ body {
   }
 }
 
-.wcu {
+.why-choose-us {
   padding: 119px 0 121px;
   background-color: #384041;
   background-position: center;
@@ -367,11 +368,11 @@ body {
   }
 }
 
-.text_block {
-  &-title {
+.text-block {
+  &_title {
     margin-bottom: 56px;
   }
-  &-text {
+  &_text {
     margin-bottom: 28px;
     letter-spacing: 0.57px;
     &:last-of-type {
@@ -450,7 +451,7 @@ body {
 .pblock {
   width: 100%;
   max-width: 540px;
-  background-color: rgba($color: #000000, $alpha: .7);
+  background-color: rgba($color: $footer-bgc, $alpha: 0.9);
   padding: 49px 25px 50px 30px;
   &_country {
     color: $text-col;
@@ -468,6 +469,83 @@ body {
   &_text {
     letter-spacing: -1px;
     margin-bottom: 43px;
+  }
+}
+
+.tourist-say {
+  padding: 114px 0 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  &_title {
+    color: $main-col;
+    letter-spacing: 0.3px;
+    margin-bottom: 93px;
+  }
+}
+
+.tsay-block {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  &_img {
+    width: 40%;
+    object-fit: cover;
+  }
+  &_description {
+    width: 60%;
+    background-color: $steps-bgc;
+    padding: 50px 40px 40px 60px;
+  }
+  &_name {
+    color: $scndry-ttl-col;
+    @include fz(20);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+  }
+  &_text {
+    text-indent: 30px;
+    letter-spacing: -1.05px;
+    position: relative;
+    .icon {
+      @include fz(20);
+      position: absolute;
+      color: $header-bgc;
+      left: -63px;
+      top: -12px;
+    }
+  }
+}
+
+.footer {
+  padding: 121px 0 80px;
+  text-align: center;
+  background-color: $footer-bgc;
+  &_logo {
+    letter-spacing: 2.3px;
+    margin-bottom: 11px;
+  }
+  &_tagline {
+    color: $main-col;
+    letter-spacing: 0.6px;
+    margin-bottom: 28px;
+  }
+  &_list {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 16%;
+  }
+  &_icon {
+    color: $text-col;
+    @include fz(16);
+    &:active,
+    &:hover {
+      color: $header-bgc;
+    }
   }
 }
 
