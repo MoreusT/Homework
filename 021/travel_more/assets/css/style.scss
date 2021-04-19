@@ -521,8 +521,12 @@ body {
 
 .footer {
   padding: 121px 0 80px;
-  text-align: center;
   background-color: $footer-bgc;
+  &_block {
+    max-width: 175px;
+    margin: 0 auto;
+    text-align: center;
+  }
   &_logo {
     letter-spacing: 2.3px;
     margin-bottom: 11px;
@@ -533,11 +537,9 @@ body {
     margin-bottom: 28px;
   }
   &_list {
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 16%;
   }
   &_icon {
     color: $text-col;
@@ -588,6 +590,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#496bfe",endColorstr="#5474fd",GradientType=1);
   background-size: 260% 100%;
   background-position: -214px 0;
+  &:active,
   &:hover {
     background-position: 0px 0;
   }
