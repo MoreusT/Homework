@@ -292,7 +292,7 @@ body {
     height: 100%;
   }
   &.fixed {
-    height: 60px;
+    height: 80px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     background-color: rgba($color: $header-bgc, $alpha: 0.7);
     backdrop-filter: blur(3px);
