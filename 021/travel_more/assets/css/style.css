@@ -315,7 +315,7 @@ body {
 .search_box {
   background-color: #fff;
   max-width: 650px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 122px;
 }
 .search_box .search_form {
@@ -343,6 +343,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 22.5%;
+  min-width: 80px;
   background-color: #5474fd;
   border: none;
   outline: none;
@@ -693,5 +694,9 @@ body {
 
   #to-top-mobile {
     display: block;
+  }
+
+  .search_box .search_btn-icon {
+    display: none;
   }
 }

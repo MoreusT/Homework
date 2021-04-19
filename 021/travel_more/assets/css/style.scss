@@ -223,7 +223,7 @@ body {
 .search_box {
   background-color: $input-bgc;
   max-width: 650px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 122px;
   .search_form {
     height: 100%;
@@ -250,6 +250,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 22.5%;
+    min-width: 80px;
     background-color: $header-bgc;
     border: none;
     outline: none;
@@ -627,5 +628,12 @@ body {
   }
   #to-top-mobile {
     display: block;
+  }
+  .search_box {
+    .search_btn {
+      &-icon {
+        display: none;
+      }
+    }
   }
 }
