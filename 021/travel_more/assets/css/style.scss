@@ -16,7 +16,7 @@ $darktext-col: #2e2e2e;
 //background-color
 $header-bgc: #5474fd;
 $input-bgc: #fff;
-$third-bgc: #333333;
+$steps-bgc: #333333;
 $footer-bgc: #232323;
 //btn
 $bgc-btn-hov: #496bfe;
@@ -39,6 +39,11 @@ body {
 .title {
   font-family: $scndry-ff;
   @include fz(36);
+}
+
+.text {
+  color: $text-col;
+  line-height: 26px;
 }
 
 .hamburger {
@@ -327,6 +332,186 @@ body {
       height: 3px;
       bottom: -7px;
     }
+  }
+}
+
+.wcu {
+  padding: 119px 0 121px;
+  background-color: #384041;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &_text-block {
+    padding-top: 78px;
+    width: 50%;
+    color: $main-col;
+  }
+  &_img-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    img {
+      max-width: 350px;
+    }
+    .img_1 {
+      margin-bottom: 4px;
+      margin-right: 22.5%;
+    }
+  }
+}
+
+.text_block {
+  &-title {
+    margin-bottom: 56px;
+  }
+  &-text {
+    margin-bottom: 28px;
+    letter-spacing: 0.57px;
+    &:last-of-type {
+      margin-bottom: 43px;
+    }
+  }
+}
+
+.steps {
+  background: $steps-bgc;
+  padding: 95px 0 112px;
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    &::before {
+      content: "";
+      display: flex;
+      position: absolute;
+      background: url(../images/arc.png) center center / contain no-repeat;
+      width: 85%;
+      height: 100%;
+      top: -85px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &_block {
+    text-align: center;
+    img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 19px;
+    }
+    &:first-of-type {
+      margin-left: -18px;
+    }
+    &:last-of-type {
+      margin-right: -20px;
+    }
+    &-middle {
+      position: relative;
+    }
+  }
+  &_title {
+    color: $text-col;
+  }
+}
+
+.present,
+.present-reverse {
+  padding: 229px 0 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.present {
+  background-color: #928caf;
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.present-reverse {
+  background-color: #ffa65a;
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
+.pblock {
+  width: 100%;
+  max-width: 540px;
+  background-color: rgba($color: #000000, $alpha: .7);
+  padding: 49px 25px 50px 30px;
+  &_country {
+    color: $text-col;
+    @include fz(20);
+    margin-bottom: 30px;
+  }
+  &_title {
+    color: $main-col;
+    font-weight: 400;
+    @include fz(20);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  &_text {
+    letter-spacing: -1px;
+    margin-bottom: 43px;
+  }
+}
+
+.btn {
+  font-family: $scndry-ff;
+  color: $main-col;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 60px;
+  width: 100%;
+  max-width: 225px;
+  line-height: 60px;
+  letter-spacing: 1.2px;
+  transition: all 0.55s ease;
+  background: rgb(73, 107, 254);
+  background: -moz-linear-gradient(
+    46deg,
+    rgba(73, 107, 254, 1) 0%,
+    rgba(73, 107, 254, 1) 50%,
+    rgba(84, 116, 253, 1) 50%,
+    rgba(84, 116, 253, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    46deg,
+    rgba(73, 107, 254, 1) 0%,
+    rgba(73, 107, 254, 1) 50%,
+    rgba(84, 116, 253, 1) 50%,
+    rgba(84, 116, 253, 1) 100%
+  );
+  background: linear-gradient(
+    46deg,
+    rgba(73, 107, 254, 1) 0%,
+    rgba(73, 107, 254, 1) 50%,
+    rgba(84, 116, 253, 1) 50%,
+    rgba(84, 116, 253, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#496bfe",endColorstr="#5474fd",GradientType=1);
+  background-size: 260% 100%;
+  background-position: -214px 0;
+  &:hover {
+    background-position: 0px 0;
   }
 }
 
