@@ -14,7 +14,6 @@ function myFunction() {
 }
 
 $(function () {
-
   $(".hamburger, #mobile-menu-shadow").on("click", function () {
     $(".hamburger").toggleClass("is-active");
     $("body").toggleClass("open");
