@@ -371,7 +371,6 @@ body {
   height: 80px;
   width: 100%;
   z-index: 100;
-  position: sticky;
   background-color: #5474fd;
 }
 .header .container {
@@ -382,6 +381,14 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+.header.fixed {
+  height: 60px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(84, 116, 253, 0.7);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
 }
 
 .menu__list {
@@ -413,6 +420,16 @@ body {
   width: 101%;
   height: 3px;
   bottom: -7px;
+}
+
+.replacer {
+  display: none;
+  height: 80px;
+  width: 100%;
+  background-color: #5474fd;
+}
+.replacer.show {
+  display: block;
 }
 
 .why-choose-us {
