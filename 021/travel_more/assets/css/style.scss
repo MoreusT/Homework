@@ -773,6 +773,8 @@ body {
 @media screen and (max-width: 768px) {
   body {
     @include fz(18);
+  }
+  section {
     overflow-x: hidden;
   }
   .menu {
