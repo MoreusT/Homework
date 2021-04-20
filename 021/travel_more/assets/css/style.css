@@ -272,14 +272,17 @@ body {
 .first_screen {
   background: #045695 url(../images/bg-img1.jpg) center center/cover no-repeat;
   height: 100vh;
-  padding: 268px 0 130px;
   color: #fff;
+}
+.first_screen .container {
+  height: 100%;
 }
 .first_screen .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 .first_screen .main_title {
   font-size: 3rem;
@@ -457,6 +460,7 @@ body {
 }
 .why-choose-us_img-block img {
   max-width: 350px;
+  width: 100%;
 }
 .why-choose-us_img-block .img_1 {
   margin-bottom: 4px;
@@ -478,12 +482,12 @@ body {
   background: #333333;
   padding: 95px 0 112px;
 }
-.steps .flex {
+.steps_list {
   display: flex;
   justify-content: space-around;
   position: relative;
 }
-.steps .flex::before {
+.steps_list::before {
   content: "";
   display: flex;
   position: absolute;
@@ -494,22 +498,20 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.steps_block {
+.steps_item {
   text-align: center;
+  margin-bottom: 10px;
 }
-.steps_block img {
+.steps_item img {
   width: 70px;
   height: 70px;
   margin-bottom: 19px;
 }
-.steps_block:first-of-type {
+.steps_item:first-of-type {
   margin-left: -18px;
 }
-.steps_block:last-of-type {
+.steps_item:last-of-type {
   margin-right: -20px;
-}
-.steps_block-middle {
-  position: relative;
 }
 .steps_title {
   color: #e8e8e8;
@@ -669,12 +671,51 @@ body {
   background-position: 0px 0;
 }
 
+@media screen and (max-width: 990px) {
+  .why-choose-us_img-block .img_1 {
+    margin-right: 10%;
+  }
+}
 @media screen and (max-width: 900px) {
   .menu__item {
     margin-right: 20px;
   }
   .menu__item--last {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 870px) {
+  .why-choose-us_img-block .img_1 {
+    margin-right: 0;
+  }
+
+  .tsay-block_description {
+    padding: 25px 20px 20px 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .why-choose-us {
+    padding: 60px 0 70px;
+  }
+  .why-choose-us .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-choose-us_text-block {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+  .why-choose-us_img-block {
+    width: 100%;
+  }
+  .why-choose-us_img-block .img_1 {
+    margin: 0 5% 5px;
+  }
+  .why-choose-us_img-block .img_2 {
+    margin: 0 5%;
+    align-self: flex-start;
   }
 }
 @media screen and (max-width: 760px) {
@@ -696,5 +737,112 @@ body {
 
   .search_box .search_btn-icon {
     display: none;
+  }
+
+  .text-block_title {
+    margin-bottom: 36px;
+  }
+
+  .steps {
+    padding: 60px 0 70px;
+  }
+  .steps_list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .steps_list::before {
+    display: none;
+  }
+  .steps_item:first-of-type {
+    margin-left: 15%;
+  }
+  .steps_item:last-of-type {
+    margin-right: 0;
+    margin-left: 15%;
+  }
+  .steps_item-middle {
+    align-self: flex-end;
+    margin-right: 15%;
+  }
+
+  .present,
+.present-reverse {
+    padding: 70px 0 60px;
+  }
+
+  .tourist-say {
+    padding: 60px 0 70px;
+  }
+  .tourist-say_title {
+    margin-bottom: 40px;
+  }
+
+  .tsay-block {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .tsay-block_img {
+    width: 70%;
+  }
+  .tsay-block_description {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    padding: 60px 0 40px;
+  }
+  .footer_block {
+    max-width: 300px;
+  }
+  .footer_icon {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .first_screen .main_title {
+    font-size: 2.375rem;
+  }
+  .first_screen .tagline {
+    font-size: 1.125rem;
+  }
+
+  .why-choose-us .text-block_btn {
+    margin: 0 auto;
+  }
+  .why-choose-us_img-block {
+    align-items: center;
+  }
+  .why-choose-us_img-block .img_1 {
+    margin: 0 0 5px;
+  }
+  .why-choose-us_img-block .img_2 {
+    align-self: center;
+    margin: 0;
+  }
+
+  .steps_list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps_item:first-of-type {
+    margin-left: 0;
+  }
+  .steps_item:last-of-type {
+    margin-left: 0;
+  }
+  .steps_item-middle {
+    align-self: center;
+    margin-right: 0;
+  }
+
+  .pblock_btn {
+    margin: 0 auto;
+  }
+
+  .tsay-block_img {
+    width: 100%;
   }
 }
