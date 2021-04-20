@@ -48,7 +48,7 @@ body {
   height: 100%;
   max-width: 400px;
   color: $main-col;
-  background-color: $header-bgc;
+  background-color: $main-col;
   -webkit-box-shadow: 0 0 5px #000;
   box-shadow: 0 0 5px #000;
   -webkit-transition: all 0.2s ease;
@@ -66,7 +66,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     padding: 10px;
-    background-color: darken($color: $header-bgc, $amount: 5);
+    background-color: $header-bgc;
     height: 80px;
   }
   &__logo {
@@ -104,7 +104,7 @@ body {
   min-height: calc(100vh - 80px);
   overflow-y: scroll;
   &__item {
-    border-bottom: 1px solid $darktext-col;
+    border-bottom: 1px solid $header-bgc;
   }
   &__link {
     display: inline-block;
@@ -114,12 +114,12 @@ body {
     line-height: 24px;
     text-decoration: none;
     text-transform: uppercase;
-    color: $main-col;
+    color: $header-bgc;
     width: 100%;
     &:active,
     &:hover {
-      background-color: #fff;
-      color: $darktext-col;
+      background-color: darken($color: $header-bgc, $amount: 5);
+      color: $main-col;
     }
   }
 }
@@ -369,7 +369,7 @@ body {
     }
     &:active .menu__link::after,
     &:hover .menu__link::after {
-      background-color: $darktext-col;
+      background-color: $main-col;
     }
   }
   &__link {

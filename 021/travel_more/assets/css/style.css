@@ -162,7 +162,7 @@ body {
   height: 100%;
   max-width: 400px;
   color: #fff;
-  background-color: #5474fd;
+  background-color: #fff;
   -webkit-box-shadow: 0 0 5px #000;
   box-shadow: 0 0 5px #000;
   -webkit-transition: all 0.2s ease;
@@ -181,7 +181,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px;
-  background-color: #3b60fd;
+  background-color: #5474fd;
   height: 80px;
 }
 .mmb__logo {
@@ -217,7 +217,7 @@ body {
   overflow-y: scroll;
 }
 .mob-menu__item {
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 1px solid #5474fd;
 }
 .mob-menu__link {
   display: inline-block;
@@ -227,12 +227,12 @@ body {
   line-height: 24px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #5474fd;
   width: 100%;
 }
 .mob-menu__link:active, .mob-menu__link:hover {
-  background-color: #fff;
-  color: #2e2e2e;
+  background-color: #3b60fd;
+  color: #fff;
 }
 
 #to-top {
@@ -477,7 +477,7 @@ body {
   margin-right: 0;
 }
 .menu__item:active .menu__link::after, .menu__item:hover .menu__link::after {
-  background-color: #2e2e2e;
+  background-color: #fff;
 }
 .menu__link {
   text-transform: uppercase;
