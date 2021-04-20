@@ -833,6 +833,10 @@ body {
   }
 }
 @media screen and (max-width: 760px) {
+  body {
+    font-size: 1.125rem;
+  }
+
   .menu {
     display: none;
   }
