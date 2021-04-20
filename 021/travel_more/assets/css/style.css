@@ -290,8 +290,11 @@ body {
   height: 100vh;
   color: #fff;
 }
-.first_screen .container {
+.first_screen-container {
   height: 100%;
+  max-width: 650px;
+  width: 90%;
+  margin: 0 auto;
 }
 .first_screen .flex {
   display: -webkit-box;
@@ -344,9 +347,9 @@ body {
 
 .search_box {
   background-color: #fff;
-  max-width: 650px;
   width: 100%;
   margin-bottom: 122px;
+  padding: 2px;
 }
 .search_box .search_form {
   height: 100%;
@@ -361,31 +364,37 @@ body {
 .search_box .search_input {
   color: #737373;
   font-family: "Josefin Sans", sans-serif;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  letter-spacing: 1.8px;
   background-color: #fff;
   border: none;
   width: 77.5%;
-  padding: 23px 3.5%;
+  padding: 20px 3.5%;
 }
 .search_box .search_input::-webkit-input-placeholder {
   text-align: center;
   color: #999999;
+  font-size: 0.875rem;
 }
 .search_box .search_input::-moz-placeholder {
   text-align: center;
   color: #999999;
+  font-size: 0.875rem;
 }
 .search_box .search_input:-ms-input-placeholder {
   text-align: center;
   color: #999999;
+  font-size: 0.875rem;
 }
 .search_box .search_input::-ms-input-placeholder {
   text-align: center;
   color: #999999;
+  font-size: 0.875rem;
 }
 .search_box .search_input::placeholder {
   text-align: center;
   color: #999999;
+  font-size: 0.875rem;
 }
 .search_box .search_btn {
   display: -webkit-box;
@@ -398,10 +407,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   width: 22.5%;
-  min-width: 80px;
   background-color: #5474fd;
   border: none;
-  margin: 2px;
   font-family: "Aleo", serif;
   font-size: 0.875rem;
   color: #fff;
@@ -858,7 +865,14 @@ body {
     display: block;
   }
 
-  .search_box .search_btn-icon {
+  .search_box .search_input {
+    width: 88%;
+    font-size: 1.125rem;
+  }
+  .search_box .search_btn {
+    width: 12%;
+  }
+  .search_box .search_btn-text {
     display: none;
   }
 

@@ -179,8 +179,11 @@ body {
   background: #045695 url(../images/bg-img1.jpg) center center / cover no-repeat;
   height: 100vh;
   color: $main-col;
-  .container {
+  &-container {
     height: 100%;
+    max-width: 650px;
+    width: 90%;
+    margin: 0 auto;
   }
   .flex {
     display: -webkit-box;
@@ -234,9 +237,9 @@ body {
 
 .search_box {
   background-color: $input-bgc;
-  max-width: 650px;
   width: 100%;
   margin-bottom: 122px;
+  padding: 2px;
   .search_form {
     height: 100%;
     width: 100%;
@@ -250,30 +253,36 @@ body {
   .search_input {
     color: darken($color: $input-col, $amount: 15);
     font-family: $main-ff;
-    letter-spacing: 2px;
+    @include fz(16);
+    letter-spacing: 1.8px;
     background-color: $input-bgc;
     border: none;
     width: 77.5%;
-    padding: 23px 3.5%;
+    padding: 20px 3.5%;
     &::-webkit-input-placeholder {
       text-align: center;
       color: $input-col;
+      @include fz(14);
     }
     &::-moz-placeholder {
       text-align: center;
       color: $input-col;
+      @include fz(14);
     }
     &:-ms-input-placeholder {
       text-align: center;
       color: $input-col;
+      @include fz(14);
     }
     &::-ms-input-placeholder {
       text-align: center;
       color: $input-col;
+      @include fz(14);
     }
     &::placeholder {
       text-align: center;
       color: $input-col;
+      @include fz(14);
     }
   }
   .search_btn {
@@ -287,10 +296,8 @@ body {
     -ms-flex-align: center;
     align-items: center;
     width: 22.5%;
-    min-width: 80px;
     background-color: $header-bgc;
     border: none;
-    margin: 2px;
     font-family: $scndry-ff;
     @include fz(14);
     color: $main-col;
@@ -780,8 +787,13 @@ body {
     display: block;
   }
   .search_box {
+    .search_input {
+      width: 88%;
+      @include fz(18);
+    }
     .search_btn {
-      &-icon {
+      width: 12%;
+      &-text {
         display: none;
       }
     }
