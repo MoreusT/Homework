@@ -799,6 +799,11 @@ body {
     padding: 25px 20px 20px 30px;
   }
 }
+@media screen and (max-width: 823) {
+  #to-top {
+    width: 12%;
+  }
+}
 @media screen and (max-width: 800px) {
   .why-choose-us {
     padding: 60px 0 70px;
@@ -832,7 +837,7 @@ body {
     align-self: flex-start;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 1.125rem;
   }
@@ -986,5 +991,15 @@ body {
 
   .tsay-block_img {
     width: 100%;
+  }
+}
+@media screen and (max-height: 500px) {
+  .search_box {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-height: 400px) {
+  .search_box {
+    margin-bottom: 15px;
   }
 }
