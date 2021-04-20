@@ -849,10 +849,6 @@ body {
     font-size: 1.125rem;
   }
 
-  html {
-    overflow-x: hidden;
-  }
-
   .menu {
     display: none;
   }
