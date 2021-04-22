@@ -54,9 +54,19 @@ function myChoco() {
 }
 
 function myBckwrd() {
-    let summ = parseFloat(prompt("Введите трьохзначное число")),
-    last = summ%10,
-    scnd = Math.floor((summ%100)/10),
-    fst = Math.floor(summ/100);
-    alert(`${last}${scnd}${fst}`);
+  let summ = parseFloat(prompt("Введите трьохзначное число")),
+    last = summ % 10,
+    scnd = Math.floor((summ % 100) / 10),
+    fst = Math.floor(summ / 100),
+    rez = last * 100 + scnd * 10 + fst;
+  alert(`${rez}`);
+}
+
+function myPrcnt() {
+  let summ = parseFloat(prompt("Введите сумму денег")),
+    mnth = parseFloat(prompt("Введите колличество месяцев")),
+    prcntyr = parseFloat(prompt("Введите ставку % годовых")),
+    prcntmnth = prcntyr / 12,
+    rez = (summ * (prcntmnth * mnth)).toFixed(2);
+  alert(`Сумма начисленных процентов: ${rez}`);
 }
