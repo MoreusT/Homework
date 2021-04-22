@@ -20,7 +20,7 @@ function mySquare() {
 function myCircle() {
   const PI = Math.PI;
   let radius = parseFloat(prompt("Введите радиус окружности")),
-    area = PI * (radius * 2);
+    area = PI * (radius ** 2);
   alert(`Площадь круга = ${area}`);
 }
 
