@@ -1,0 +1,36 @@
+@import "reset";
+
+body {
+  background-color: rgb(53, 53, 53);
+}
+
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 300;
+  width: 150px;
+  padding: 8px 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(153, 0, 255);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  &:hover {
+    background-color: rgb(113, 0, 189);
+  }
+}

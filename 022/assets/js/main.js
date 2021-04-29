@@ -20,7 +20,7 @@ function mySquare() {
 function myCircle() {
   const PI = Math.PI;
   let radius = parseFloat(prompt("Введите радиус окружности")),
-    area = PI * (radius ** 2);
+    area = PI * radius ** 2;
   alert(`Площадь круга = ${area}`);
 }
 
@@ -54,7 +54,7 @@ function myChoco() {
 }
 
 function myBckwrd() {
-  let summ = parseFloat(prompt("Введите трьохзначное число")),
+  let summ = parseInt(prompt("Введите трьохзначное число")),
     last = summ % 10,
     scnd = Math.floor((summ % 100) / 10),
     fst = Math.floor(summ / 100),
