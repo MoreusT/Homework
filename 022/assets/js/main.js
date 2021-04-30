@@ -68,5 +68,5 @@ function myPrcnt() {
     prcntyr = parseFloat(prompt("Введите ставку % годовых")),
     prcntmnth = summ / 100 * prcntyr,
     rez = (summ + (prcntmnth * mnth)).toFixed(2);
-  alert(`Сумма начисленных процентов: ${rez}`);
+  alert(`Сумма с процентом: ${rez}`);
 }
