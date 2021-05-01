@@ -20,6 +20,10 @@ ol {
   list-style: none;
 }
 
+img {
+  vertical-align: top;
+}
+
 .container {
   width: 90%;
   max-width: 1120px;
@@ -28,22 +32,27 @@ ol {
 
 .card_wrap {
   margin-top: 91px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+  /* display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin-bottom: 55px;
 }
 
 .big_card {
+  width: 100%;
+  grid-column: 1 / 3;
+  height: 540px;
   display: flex;
   align-items: flex-end;
   position: relative;
-  width: 740px;
-  height: 540px;
-  min-width: 360px;
-  background-color: transparent;
-  background-image: url(../images/bigimg.jpg);
+  /* width: 740px; */
+  /* min-width: 360px; */
+  background: transparent url(../images/bigimg.jpg) center center / cover
+    no-repeat;
 }
 
 .gradient {
@@ -78,15 +87,16 @@ ol {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-  max-width: 440px;
+  /* max-width: 440px; */
 }
 
 .card {
-  width: 360px;
+  /* width: 360px; */
+  width: 100%;
   height: 540px;
   position: relative;
   background-color: #fff;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .card_img {
