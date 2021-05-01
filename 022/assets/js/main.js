@@ -66,7 +66,7 @@ function myPrcnt() {
   let summ = parseFloat(prompt("Введите сумму денег")),
     mnth = parseFloat(prompt("Введите колличество месяцев")),
     prcntyr = parseFloat(prompt("Введите ставку % годовых")),
-    prcntmnth = summ / 100 * prcntyr,
-    rez = (summ + (prcntmnth * mnth)).toFixed(2);
-  alert(`Сумма с процентом: ${rez}`);
+    prcntmnth = summ / 100 * prcntyr / 12,
+    rez = (prcntmnth * mnth).toFixed(2);
+  alert(`Сумма начисленных процентов: ${rez}`);
 }
