@@ -1,0 +1,20 @@
+.multTbl_block * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.multTbl_block {
+    border: 1px solid #000;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 5px 5px 5px 10px;
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    & li {
+        list-style: none;
+        width: 100%;
+    }
+}

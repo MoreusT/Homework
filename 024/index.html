@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="row mt-4 mb-4">
+        <h4 class="ms-5">Task 1</h4>
+        <div class="col-2">
+            <input type="nubmer" class="form-control" id="summ_number1">
+        </div>
+        <div class="col-2">
+            <input type="nubmer" class="form-control" id="summ_number2">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" onclick="summOf()">GO!</button>
+        </div>
+        <div class="col-6" id="summ_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 2</h4>
+        <div class="col-2">
+            <input type="nubmer" class="form-control" id="del_number1">
+        </div>
+        <div class="col-2">
+            <input type="nubmer" class="form-control" id="del_number2">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" onclick="del()">GO!</button>
+        </div>
+        <div class="col-6" id="del_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 3</h4>
+            <div class="col-4">
+                <input type="nubmer" class="form-control" id="allDel_number">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-success" onclick="allDel()">GO!</button>
+            </div>
+            <div class="col-6" id="allDel_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 4</h4>
+        <div class="col-4">
+            <input type="nubmer" class="form-control" id="digAmm_number">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" onclick="digAmm()">GO!</button>
+        </div>
+        <div class="col-6" id="digAmm_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 5</h4>
+        <div class="col-2">
+            <button class="btn btn-warning mb-4" onclick="cntNmbrs()">GO!</button>
+        </div>
+        <div class="col-10" id="cntNmbrs_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 6</h4>
+        <div class="col-2">
+            <button class="btn btn-warning mb-4" onclick="myCalc()">GO!</button>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 7</h4>
+        <div class="col-2">
+            <input type="nubmer" class="form-control" id="shift_n1">
+        </div>
+        <div class="col-2">
+            <input type="nubmer" class="form-control" id="shift_n2">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" onclick="shiftNmbr()">GO!</button>
+        </div>
+        <div class="col-6" id="shift_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 8</h4>
+        <div class="col-2">
+            <button class="btn btn-warning mb-4" onclick="nextDate()">GO!</button>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 9</h4>
+        <div class="col-1">
+            <button class="btn btn-warning mb-4" onclick="multTbl()">GO!</button>
+        </div>
+        <div class="col-11" id="multTbl_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 10</h4>
+        <div class="col-2">
+            <button class="btn btn-warning mb-4" onclick="findNmbr()">GO!</button>
+        </div>
+    </div>
+</div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

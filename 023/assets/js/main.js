@@ -104,7 +104,6 @@ function isPlndrm() {
 }
 
 function myConv() {
-  debugger;
   let usd = parseFloat(prompt("Enter summ in USD")),
     cur = prompt("Enter currency: EUR/UAH/AZN"),
     rez = "";
@@ -192,7 +191,6 @@ function quiz() {
 }
 
 function nextDate() {
-  debugger;
   const date = prompt("Enter date: dd/mm/yyyy"),
     arDate = date.split("/"),
     d = parseInt(arDate[0]),
