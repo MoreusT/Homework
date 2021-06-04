@@ -18,31 +18,85 @@
     <div class="row mt-4 mb-4">
         <h4 class="ms-5">Task 1</h4>
         <div class="col-2">
-            <input type="number" class="form-control" id="summ_number1">
+            <input type="number" class="form-control" id="compare_n1">
         </div>
         <div class="col-2">
-            <input type="number" class="form-control" id="summ_number2">
+            <input type="number" class="form-control" id="compare_n2">
         </div>
         <div class="col-2">
-            <button class="btn btn-success" onclick="summOf()">GO!</button>
+            <button class="btn btn-success" onclick="compare()">GO!</button>
         </div>
-        <div class="col-6" id="summ_rez"></div>
+        <div class="col-6" id="compare_rez"></div>
     </div>
 
     <div class="row mb-4">
         <h4 class="ms-5">Task 2</h4>
-        <div class="col-2">
-            <input type="number" class="form-control" id="del_number1">
-        </div>
-        <div class="col-2">
-            <input type="number" class="form-control" id="del_number2">
-        </div>
-        <div class="col-2">
-            <button class="btn btn-success" onclick="del()">GO!</button>
-        </div>
-        <div class="col-6" id="del_rez"></div>
+            <div class="col-4">
+                <input type="number" class="form-control" id="fact_n">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-success" onclick="fact()">GO!</button>
+            </div>
+            <div class="col-6" id="fact_rez"></div>
     </div>
 
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 3</h4>
+        <div class="col-2">
+            <input type="number" class="form-control" id="glueDig_n1">
+        </div>
+        <div class="col-2">
+            <input type="number" class="form-control" id="glueDig_n2">
+        </div>
+        <div class="col-2">
+            <input type="number" class="form-control" id="glueDig_n3">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" onclick="glueDig()">GO!</button>
+        </div>
+        <div class="col-4" id="glueDig_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 4</h4>
+        <div class="col-2">
+            <input type="number" class="form-control" id="area_n1">
+        </div>
+        <div class="col-2">
+            <input type="number" class="form-control" id="area_n2">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" onclick="area()">GO!</button>
+        </div>
+        <div class="col-4" id="area_rez"></div>
+    </div>
+
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 5</h4>
+            <div class="col-4">
+                <input type="number" class="form-control" id="perfD_n">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-success" onclick="perfD()">GO!</button>
+            </div>
+            <div class="col-6" id="perfD_rez"></div>
+    </div>
+    
+    <div class="row mb-4">
+        <h4 class="ms-5">Task 6</h4>
+        <div class="col-2">
+            <input type="number" class="form-control" id="perfRange_n1">
+        </div>
+        <div class="col-2">
+            <input type="number" class="form-control" id="perfRange_n2">
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success" onclick="perfRange()">GO!</button>
+        </div>
+        <div class="col-4" id="perfRange_rez"></div>
+    </div>
+
+<!-- 
     <div class="row mb-4">
         <h4 class="ms-5">Task 3</h4>
             <div class="col-4">
@@ -103,10 +157,10 @@
 
     <div class="row mb-4">
         <h4 class="ms-5">Task 9</h4>
-        <div class="col-2">
+        <div class="col-1">
             <button class="btn btn-warning mb-4" onclick="multTbl()">GO!</button>
         </div>
-        <div class="col-10" id="multTbl_rez"></div>
+        <div class="col-11" id="multTbl_rez"></div>
     </div>
 
     <div class="row mb-4">
@@ -114,7 +168,8 @@
         <div class="col-2">
             <button class="btn btn-warning mb-4" onclick="findNmbr()">GO!</button>
         </div>
-    </div>
+    </div> 
+-->
 </div>
 
     <script src="assets/js/main.js"></script>
