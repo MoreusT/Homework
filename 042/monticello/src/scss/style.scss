@@ -1,0 +1,13 @@
+@import "base/index";
+@import "header";
+@import "footer";
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }

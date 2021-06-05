@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monticello</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7e5aff">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#7e5aff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7e5aff">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="mobile-menu-block mmb">
+        <div class="mmb__top">
+            <div class="mmb__logo"><img class="mmb__logo-img lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="check sign" data-src="images/logo.svg"></div>
+            <button class="hamburger hamburger--elastic" type="button" aria-label="mobile menu button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav class="mmb__mobile-menu mob-menu">
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Who We Are</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">What We Do</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Travel With Us</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mobile-menu-shadow"></div>
+
+    <div id="to-top"></div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="flex">
+                <div class="header__logo logo"><img class="header__logo-img lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="check sign" data-src="images/logo.svg"></div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Who We Are</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">What We Do</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Travel With Us</a></li>
+                        <li class="menu__item menu__item--last"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="menu__link" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--elastic" type="button" aria-label="mobile menu button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/intersection-observer.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

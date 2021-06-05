@@ -1,0 +1,28 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MaxBS",
+  "license": "ISC",
+  "browserslist": [
+    "last 4 versions",
+    "ie >= 11",
+    "> 5%"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "cssnano": "^5.0.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.0"
+  }
+}
