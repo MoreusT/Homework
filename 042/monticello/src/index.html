@@ -16,6 +16,7 @@
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#7e5aff">
 
+    <link rel="stylesheet" href="pluggins/lightslider/css/lightslider.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,10 +33,15 @@
         </div>
         <nav class="mmb__mobile-menu mob-menu">
             <ul class="mob-menu__list">
-                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Who We Are</a></li>
-                <li class="mob-menu__item"><a class="mob-menu__link" href="#">What We Do</a></li>
-                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Travel With Us</a></li>
-                <li class="mob-menu__item"><a class="mob-menu__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">About Us</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Projects</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">News</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+            <ul class="mmb__soc-list mob-soc">
+                <li class="mob-soc__item"><a href="#" class="mob-soc__link"><i class="icon-facebook"></i></a></li>
+                <li class="mob-soc__item"><a href="#" class="mob-soc__link"><i class="icon-twitter"></i></a></li>
+                <li class="mob-soc__item"><a href="#" class="mob-soc__link"><i class="icon-instagram"></i></a></li>
             </ul>
         </nav>
     </div>
@@ -47,18 +53,23 @@
     <header class="header" id="header">
         <div class="container">
             <div class="flex">
-                <div class="header__logo logo"><img class="header__logo-img lazy"
+                <div class="header__logo"><img class="header__logo-img lazy"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                     alt="check sign" data-src="images/logo.svg"></div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Who We Are</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">What We Do</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Travel With Us</a></li>
-                        <li class="menu__item menu__item--last"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="menu__link" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                        <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Projects</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+                        <li class="menu__item menu__item--last"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="menu__link" target="_blank" rel="noopener noreferrer">Contact</a>
                         </li>
                     </ul>
                 </nav>
+                <ul class="header__soc-list soc-list">
+                    <li class="soc-list__item"><a href="#" class="soc-list__link"><i class="icon-facebook"></i></a></li>
+                    <li class="soc-list__item"><a href="#" class="soc-list__link"><i class="icon-twitter"></i></a></li>
+                    <li class="soc-list__item"><a href="#" class="soc-list__link"><i class="icon-instagram"></i></a></li>
+                </ul>
                 <button class="hamburger hamburger--elastic" type="button" aria-label="mobile menu button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
@@ -67,10 +78,70 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="first-screen">
+            <div class="slider__wrap">
+                <div class="slider">
+                    <div>
+                        <div class="slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                            <div class="slider__item-title">Simple & Mordern</div>
+                            <div class="slider__item-tagline">We make the world's beautiful every day</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                            <div class="slider__item-title">Second slider title</div>
+                            <div class="slider__item-tagline">Just another tagline</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                            <div class="slider__item-title">Third slider title</div>
+                            <div class="slider__item-tagline">Still tagline</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                            <div class="slider__item-title">Actualy not so simple</div>
+                            <div class="slider__item-tagline">Also tagline</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                            <div class="slider__item-title">You should know, that this is fifth slider item.</div>
+                            <div class="slider__item-tagline">Don't you have enough taglines today?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__button"><a href="javascript:void(0)" id="slider_next"></a></div>
+            </div>
+        </section>
+        <section class="what-we-do wwd">
+            <div class="container">
+                <h2 class="wwd__title">What we do</h2>
+                <div class="wwd__block wwd__block-left wwd-blk">
+                    <div class="wwd-blk__img-blk"><img class="wwd-blk__img lazy"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                        alt="check sign" data-src="images/wwd-img_01.jpg">
+                    </div>
+                    <div class="wwd-blk__text-blk">
+                        <div class="wwd-blk__pretitle">One world</div>
+                        <h2 class="wwd-blk__title">Trade Center</h2>
+                        <p class="wwd-blk__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                        <a href="#" class="btn wwd-blk__button">More details</a>
+                        
+                    </div>
+                </div>
+                <div class="wwd_block wwd__block-left-right wwd-blk"></div>
+            </div>
+        </section>
+    </main>
+    
 
     <script src="js/intersection-observer.js"></script>
     <script src="js/lazyload.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="pluggins/lightslider/js/lightslider.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

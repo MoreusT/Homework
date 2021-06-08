@@ -76,6 +76,13 @@ gulp.task('favicon', function (done) {
     done();
 });
 
+gulp.task('pluggins', function (done) {
+  gulp.src('./src/pluggins/**/*')
+    .pipe(image())
+    .pipe(gulp.dest('./dist/pluggins'));
+    done();
+});
+
 gulp.task('clean', (done) => {
 	del(['./dist/*']);
 	done();
@@ -93,6 +100,6 @@ gulp.task('move', (done)=>{
 	done();
 });
 
-gulp.task('build', gulp.series('clean', 'sass', gulp.parallel('css', 'image', 'fonts', 'favicon'),'move'), function(done) {
+gulp.task('build', gulp.series('clean', 'sass', gulp.parallel('css', 'image', 'fonts', 'favicon', 'pluggins'),'move'), function(done) {
 	done();
 });
