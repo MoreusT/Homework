@@ -69,3 +69,40 @@ lightGallery(lightgallery, {
   plugins: [lgZoom, lgThumbnail],
   speed: 500,
 });
+
+let map;
+
+function initMap(){
+  map = L.map('map').setView([40.674022, -73.899126], 15);
+  
+  L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  let customIcon = L.icon({
+    iconUrl: 'images/map_marker.png',
+    iconSize: [80, 80],
+  });
+
+  L.marker([40.680699, -73.902611], {icon: customIcon}).addTo(map)
+      .bindPopup(`
+      <ul class="markerPopup">
+          <li>This markup</li>
+          <li>Created by</li>
+          <li>MoreusT</li>
+      </ul>
+      `);
+}
+
+$("#map_link").on('click', function(){
+  $('head').append('<link rel="stylesheet" href="plugins/leaflet/leaflet.css">');
+  $("body").append('<script src="plugins/leaflet/leaflet.js"></script>');
+    const intID = setInterval(()=>{
+        if(typeof L!=="undefined"){
+            clearInterval(intID);
+            initMap();
+        }
+    }, 10);
+  $("#map_link").remove();
+  $("#map_pic").remove();
+});

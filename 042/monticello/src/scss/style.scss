@@ -5,6 +5,7 @@
 @import "sections/what-we-do";
 @import "sections/latest-news";
 @import "sections/gallery";
+@import "sections/get-in-touch";
 
 body {
     font-family: "Gotham", sans-serif;
@@ -17,6 +18,7 @@ body {
 }
 
 .btn {
+    font-family: $main-ff;
     display: block;
     text-decoration: none;
     cursor: pointer;
@@ -29,6 +31,7 @@ body {
     border: rem(1px) solid $title-col;
     width: rem(190px);
     height: rem(50px);
+    background-color: transparent;
     &:hover, &:active {
         background-color: $title-col;
         color: $main-col;
@@ -37,7 +40,7 @@ body {
 
 .arrow-btn {
     position: absolute;
-    & a {
+    a {
         text-decoration: none;
         display: block;
         width: rem(40px);

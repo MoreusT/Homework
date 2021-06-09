@@ -1,0 +1,118 @@
+.get-in-touch {
+    position: relative;
+    .container {
+        max-width: rem(770px);
+    }
+    &__map {
+        height:700px;
+        position: relative;
+        z-index: 0;
+        &-preview {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-text {
+            display: block;
+            position: absolute;
+            text-transform: uppercase;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba($color: $header-bgc, $alpha: .6);
+            color: $main-col;
+            text-align: center;
+            line-height: 700px;
+            font-size: 20px;
+            text-decoration: none;
+            opacity: 0;
+            transition: all .2s ease;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.markerPopup {
+    li {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $main-ff;
+        color: $title-col;
+        font-size: rem(14px);
+    }
+}
+
+.gint-sf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    max-width: 770px;
+    padding: rem(80px) rem(0px) rem(44px) rem(0px);
+    left: 50%;
+    bottom: rem(-145px);
+    transform: translateX(-50%);
+    background-color: $main-col;
+    background-size: cover;
+    background-position: center;
+    &__top {
+        .gint-sf__title {
+            color: $title-col;
+            margin-bottom: rem(40px);
+            &::before {
+                top: rem(-20px);
+                background-color: $title-col;
+            }
+        }
+    }
+    &__btm {
+        display: flex;
+        justify-content: center;
+        .fblk__btn {
+            position: absolute;
+            right: rem(60px);
+            width: rem(140px);
+        }
+    }
+}
+
+.cblk {
+    &__link {
+        padding-left: rem(20px);
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        color: $title-col;
+        font-weight: 350;
+        font-size: rem(18px);
+        line-height: rem(34px);
+        margin-bottom: rem(25px);
+        i {
+            color: $icon-col;
+            margin-right: rem(3px);
+        }
+    }
+}
+
+.fblk {
+    padding-left: rem(45px);
+    width: 50%;
+    &__input {
+        font-family: $main-ff;
+        font-size: rem(18px);
+        line-height: rem(22px);
+        color: $title-col;
+        margin-bottom: rem(28px);
+        padding: rem(7px) rem(5px) rem(15px) rem(5px);
+        width: 93%;
+        border: none;
+        border-bottom: rem(1px) solid $title-col;
+        &:last-of-type {
+            margin-bottom: rem(31px);
+        }
+    }
+    
+}

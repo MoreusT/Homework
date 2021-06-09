@@ -36,7 +36,6 @@
         transform: translateX(-50%);
         & a {
             &::before {
-                margin-left: rem(-1px);
                 top: rem(14px);
                 border-left: rem(1px) solid #fff;
                 border-bottom: rem(1px) solid #fff;
