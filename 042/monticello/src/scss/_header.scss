@@ -50,7 +50,7 @@
 }
 
 .mob-menu {
-  min-height: calc(100vh - rem(80px));
+  min-height: calc(100vh - 3.125rem);
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
