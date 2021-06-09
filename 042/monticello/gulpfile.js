@@ -76,10 +76,10 @@ gulp.task('favicon', function (done) {
     done();
 });
 
-gulp.task('pluggins', function (done) {
-  gulp.src('./src/pluggins/**/*')
+gulp.task('plugins', function (done) {
+  gulp.src('./src/plugins/**/*')
     .pipe(image())
-    .pipe(gulp.dest('./dist/pluggins'));
+    .pipe(gulp.dest('./dist/plugins'));
     done();
 });
 
@@ -106,6 +106,6 @@ gulp.task('move', (done)=>{
   done();
 });
 
-gulp.task('build', gulp.series('clean', 'sass', gulp.parallel('css', 'image', 'fonts', 'favicon', 'pluggins'),'move'), function(done) {
+gulp.task('build', gulp.series('clean', 'sass', gulp.parallel('css', 'image', 'fonts', 'favicon', 'plugins'),'move'), function(done) {
 	done();
 });
