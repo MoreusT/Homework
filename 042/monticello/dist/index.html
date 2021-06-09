@@ -288,28 +288,26 @@
                 alt="map preview" data-src="images/map.jpg" id="map_pic">
                 <a class="get-in-touch__map-text" href="javascript:void(0)" id="map_link">Click for interact map</a>
             </div>
-            <div class="container">
                 <div class="get-in-touch__submit-form gint-sf lazy-bg" data-src="images/get-in-touch_bg.jpg">
                     <div class="gint-sf__top">
                         <h2 class="gint-sf__title title">Get in touch</h2>
                     </div>
                     <div class="gint-sf__btm">
                         <div class="gint-sf__contact-blk cblk">
-                            <a class="cblk__location cblk__link" href="https://maps.google.com/?q=Miami" class="wwd-blk__link" rel="noopener noreferrer" target="_blank"><i class="icon-location"></i>91 Nolan Extensions Suite 670</a>
-                            <a class="cblk__tel cblk__link" href="tel:+0013568682454"><i class="icon-phone"></i>+001 356-868-2454</a>
+                            <a class="cblk__location cblk__link" href="https://maps.google.com/?q=Miami" class="wwd-blk__link" rel="noopener noreferrer" target="_blank"><i class="icon-location"></i>91&nbsp;Nolan&nbsp;Extensions Suite&nbsp;670</a>
+                            <a class="cblk__tel cblk__link" href="tel:+0013568682454"><i class="icon-phone"></i>+001&nbsp;356-868-2454</a>
                             <a class="cblk__email cblk__link" href="email:gahuy93@gmail.com"><i class="icon-inbox"></i>gahuy93@gmail.com</a>
-                            <div class="cblk__clock cblk__link"><i class="icon-clock"></i>From 07:05AM to 19:30PM</div>
+                            <div class="cblk__clock cblk__link"><i class="icon-clock"></i>From&nbsp;07:05AM to&nbsp;19:30PM</div>
                         </div>
                         <div class="gint-sf__form-blk fblk">
                             <form class="fblk__form" action="" name="submit_form" id="submit_form" method="POST">
-                                <input class="fblk__name fblk__input" type="text" placeholder="Your name" name="name">
-                                <input class="fblk__email fblk__input" type="email" placeholder="Email" name="email">
-                                <button type="submit" class="fblk__btn btn">Submit</button>
+                                <input class="fblk__name fblk__input" type="text" placeholder="Your name" name="name" id="fblk_name">
+                                <input class="fblk__email fblk__input" type="email" placeholder="Email" name="email" id="fblk_email">
+                                <button type="submit" class="fblk__btn btn" id="submit_btn">Submit</button>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <footer class="footer lazy-bg"  data-src="images/footer_bg.jpg">
@@ -336,11 +334,13 @@
 
     <script src="js/intersection-observer.js"></script>
     <script src="js/lazyload.js"></script>
+    <script src="js/top_panel.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="plugins/lightslider/js/lightslider.min.js"></script>
     <script src="plugins/lightgallery/lightgallery.min.js"></script>
     <script src="plugins/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
     <script src="plugins/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="js/axios.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

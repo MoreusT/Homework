@@ -55,7 +55,21 @@ const lnSlider = $(".ln-slider").lightSlider({
   pause: 5000,
   loop: true,
   controls: false,
-  slideMargin: 28
+  slideMargin: 28,
+  responsive: [
+    {
+    breakpoint: 1024,
+    settings: {
+      item: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        item: 1
+      }
+    }
+  ]
 });
 
 $("#ln-slider_prev").on('click', function () {
@@ -106,3 +120,36 @@ $("#map_link").on('click', function(){
   $("#map_link").remove();
   $("#map_pic").remove();
 });
+
+function isValidEmail(email) {
+  let regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
+$(document).on('submit', function(e){
+  if (e.target.id === "submit_form") {
+    e.preventDefault();
+    const email = fblk_email.value;
+    if (email !== "") {
+      if (isValidEmail(email)) {
+        submitForm();
+        topPanel.success("Form send successfully", true);
+        $("#submit_form").trigger("reset");
+      } else {
+        topPanel.warning("Enter valid email address", true);
+      }
+    } else {
+      topPanel.warning("Enter email address", true);
+    }
+  }
+});
+
+function submitForm(){
+  const BOT_TOKEN = '1887132407:AAHj0jfGYMkm31W5wVAfK1hhvoITq_Y7mHE';
+  const CHAT_ID = '-1001449470861';
+  const text = "Name: " + fblk_name.value + " Email: " + fblk_email.value;
+  if(text!==""){
+      axios
+          .get('https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage?chat_id='+CHAT_ID+'&text='+text)
+  }
+}

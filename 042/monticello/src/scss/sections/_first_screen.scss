@@ -10,6 +10,7 @@
         text-align: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position:center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -62,6 +63,40 @@
                 width: rem(9px);
                 height: rem(9px);
                 transition: all .2s ease;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .first-screen {
+        .fs-slider__item {
+            &-title {
+                font-size: rem(50px);
+            }
+            &-tagline {
+                font-size: rem(14px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first-screen {
+        margin-bottom: rem(80px);
+        .fs-slider__item {
+            &-title {
+                font-size: rem(30px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+        .first-screen {
+        & .lSSlideOuter .lSPager.lSpg {
+            &>li {
+                margin: rem(32px) rem(10px);
             }
         }
     }

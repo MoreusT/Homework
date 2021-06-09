@@ -1,4 +1,8 @@
 .wwd {
+    width: 100%;
+    .container {
+        width: 70%;
+    }
     &__title {
         color: $title-col;
         margin-bottom: rem(160px);
@@ -35,6 +39,8 @@
 
 .wwd-blk {
     display: flex;
+    align-items: start;
+    justify-content: flex-start;
     margin-bottom: rem(210px);
     &:last-child {
         margin-bottom: rem(139px);
@@ -97,6 +103,181 @@
         margin-left: rem(-8px);
         & i {
             margin-right: rem(2px);
+        }
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    .wwd-blk {
+        &__text-blk {
+            padding-top: rem(25px);
+            padding-bottom: 0;
+        }
+        &__pretitle {
+            font-size: rem(20px);
+        }
+        &__title {
+            font-size: rem(35px);
+        }
+        &__text {
+            font-size: rem(16px);
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .wwd {
+        &__block-left {
+            .wwd-blk__text-blk {
+            padding-left: rem(35px);
+            }
+        }
+        &__block-right {
+            .wwd-blk__text-blk {
+                padding-right: rem(35px);
+            }
+        }
+    }
+    .wwd-blk {
+        &__text-blk {
+            padding-top: rem(15px);
+        }
+        &__pretitle {
+            font-size: rem(18px);
+        }
+        &__title {
+            font-size: rem(30px);
+        }
+        &__text {
+            font-size: rem(14px);
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .wwd {
+        .container {
+            width: 75%;
+        }
+    }
+    .wwd-blk {
+        &__img-blk {
+          width: 45%;
+        }
+        &__text-blk {
+            width: 55%;
+        }
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .wwd {
+        .container {
+            width: 87%;
+        }
+        &__block-left {
+            .wwd-blk__img-blk {
+                &::before{
+                    background-color: $date-col;
+                    left: -14.5%;
+                }
+            }
+        }
+        &__block-right {
+            .wwd-blk__img-blk {
+                &::before {
+                    background-color: $icon-col;
+                    right: -14.5%;
+                }
+            }
+        }
+    }
+    .wwd-blk {
+        &__text-blk {
+            padding-top: 0;
+        }
+        &__img-blk {
+            &::before {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wwd {
+        .container {
+            width: 90%;
+        }
+        &__title {
+            margin-bottom: rem(80px);
+        }
+        &__block-left {
+            .wwd-blk__text-blk {
+                padding-left: 0;
+                }
+            .wwd-blk__img-blk {
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        &__block-right {
+            .wwd-blk__text-blk {
+                padding-right: 0;
+                }
+            .wwd-blk__img-blk {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .wwd-blk {
+        flex-direction: column;
+        margin-bottom: rem(80px);
+        &:last-child {
+            margin-bottom: rem(80px);
+        }
+        &__img-blk {
+            width: 100%;
+        }
+        &__text-blk {
+            width: 100%;
+            padding-top: rem(20px);
+        }
+        &__pretitle {
+            font-size: rem(20px);
+        }
+        &__title {
+            font-size: rem(34px);
+        }
+        &__text {
+            font-size: rem(16px);
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .wwd {
+        &__title {
+            margin-bottom: rem(40px);
+        }
+    }
+    .wwd-blk {
+        &__pretitle {
+            font-size: rem(18px);
+        }
+        &__title {
+            font-size: rem(30px);
+            margin-bottom: rem(14px);
+        }
+        &__text {
+            font-size: rem(16px);
+            line-height: rem(26px);
+        }
+        &__btn {
+            margin: 0 auto rem(30px)
         }
     }
 }
