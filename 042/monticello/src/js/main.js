@@ -33,18 +33,39 @@ function heightCount(n){
   n = $(".first-screen").height();
   return n;
 }
-let h = heightCount();
 
-const slider = $(".slider").lightSlider({
+$(".fs-slider").lightSlider({
       item: 1,
-      // auto: true,
+      auto: true,
+      pause: 5000,
       loop: true,
       controls: false,
       vertical: true,
-      verticalHeight: h,
-      slideMargin: 0,
+      verticalHeight: heightCount(),
+      slideMargin: 0
 });
 
-$("#slider_next").on('click', function(){
-      slider.goToNextSlide()
+$("#scroll_down").on('click', function(){
+  $("html, body").animate({ scrollTop: heightCount()}, 400);
+});
+
+const lnSlider = $(".ln-slider").lightSlider({
+  item: 3,
+  auto: true,
+  pause: 5000,
+  loop: true,
+  controls: false,
+  slideMargin: 28
+});
+
+$("#ln-slider_prev").on('click', function () {
+  lnSlider.goToPrevSlide()
+});
+$("#ln-slider_next").on('click', function () {
+  lnSlider.goToNextSlide()
+});
+
+lightGallery(lightgallery, {
+  plugins: [lgZoom, lgThumbnail],
+  speed: 500,
 });

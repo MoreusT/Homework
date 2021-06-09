@@ -1,0 +1,16 @@
+.footer {
+    background-size: cover;
+    background-position: center;
+
+}
+
+.footer-soc {
+    &__link{
+        border-color: $main-col;
+        color: $main-col;
+        &:hover {
+            background-color: $main-col;
+            color: $header-bgc;
+        }
+    }
+}

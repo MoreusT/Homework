@@ -1,6 +1,10 @@
 @import "base/index";
 @import "header";
 @import "footer";
+@import "sections/first_screen";
+@import "sections/what-we-do";
+@import "sections/latest-news";
+@import "sections/gallery";
 
 body {
     font-family: "Gotham", sans-serif;
@@ -12,62 +16,77 @@ body {
     margin: 0 auto;
 }
 
-.first-screen {
-    position: relative;
-    height: 100vh;
-    max-height: rem(800px);
-    .slider__item {
-        height: 100%;
-        width: 100%;
-        padding: 10%;
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.btn {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-col;
+    font-size: rem(14px);
+    font-weight: 350;
+    line-height: rem(50px);
+    border: rem(1px) solid $title-col;
+    width: rem(190px);
+    height: rem(50px);
+    &:hover, &:active {
+        background-color: $title-col;
         color: $main-col;
-        &-title {
-            margin-top: rem(33px);
-            font-size: rem(80px);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: rem(4.5px);
-            margin-bottom: rem(18px);
+    }
+}
+
+.arrow-btn {
+    position: absolute;
+    & a {
+        text-decoration: none;
+        display: block;
+        width: rem(40px);
+        height: rem(40px);
+        border: rem(1px) solid $main-col;
+        border-radius: 50%;
+        &:hover, &:active {
+            background-color: $main-col;
         }
-        &-tagline {
-            font-size: rem(18px);
-            font-weight: 350;
-            text-transform: uppercase;
-            letter-spacing: rem(5.5px);
+        &:hover::before, &:active::before{
+            border-color: $header-bgc;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 50%;
+            width: rem(5px);
+            height: rem(5px);
         }
     }
-    .slider__button {
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(44px);
+    font-weight: 700;
+    &::before {
+        content: "";
+        display: block;
+        width: rem(100px);
+        height: rem(1px);
         position: absolute;
-        bottom: rem(50px);
         left: 50%;
         transform: translateX(-50%);
-        & a {
-            text-decoration: none;
-            display: block;
-            width: rem(40px);
-            height: rem(40px);
-            border: rem(1px) solid $main-col;
-            border-radius: 50%;
-            &::before {
-                content: "";
-                position: absolute;
-                display: block;
-                margin-left: rem(-1px);
-                top: rem(15px);
-                left: 50%;
-                border-left: rem(1px) solid #fff;
-                border-bottom: rem(1px) solid #fff;
-                width: rem(5px);
-                height: rem(5px);
-                transform: rotate(-45deg) translateX(-50%);
-            }
-        }
+        top: rem(-31px);
     }
+}
+
+.soc_link {
+    display: block;
+    border-width: rem(1px);
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+    width: rem(40px);
+    height: rem(40px);
+    line-height: rem(40px);
+    text-decoration: none;
 }

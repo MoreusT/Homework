@@ -87,15 +87,8 @@
     margin: rem(10px);
   }
   &__link{
-    display: block;
-    border: rem(1px) solid $header-bgc;
-    border-radius: 50%;
-    text-align: center;
-    width: rem(40px);
-    height: rem(40px);
-    line-height: rem(40px);
+    border-color: $header-bgc;
     color: $header-bgc;
-    text-decoration: none;
     &:hover {
       background-color: $header-bgc;
       color: $main-col;
@@ -208,15 +201,8 @@
     }
   }
   &__link{
-    display: block;
-    border: rem(1px) solid $main-col;
-    border-radius: 50%;
-    text-align: center;
-    width: rem(40px);
-    height: rem(40px);
-    line-height: rem(40px);
+    border-color: $main-col;
     color: $main-col;
-    text-decoration: none;
     &:hover {
       background-color: $main-col;
       color: $header-bgc;

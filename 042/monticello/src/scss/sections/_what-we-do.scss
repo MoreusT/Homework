@@ -1,0 +1,102 @@
+.wwd {
+    &__title {
+        color: $title-col;
+        margin-bottom: rem(160px);
+        &::before {
+            background-color: $title-col;
+        }
+    }
+    &__block-left {
+        .wwd-blk__text-blk {
+        padding-left: rem(70px);
+        }
+        .wwd-blk__img-blk {
+            &::before{
+                background-color: $date-col;
+                left: -34.5%;
+                top: -14.8%;
+            }
+        }
+    }
+    &__block-right {
+        flex-direction: row-reverse;
+        .wwd-blk__text-blk {
+            padding-right: rem(70px);
+        }
+        .wwd-blk__img-blk {
+            &::before {
+                background-color: $icon-col;
+                right: -34.5%;
+                top: -14.8%;
+            }
+        }
+    }
+}
+
+.wwd-blk {
+    display: flex;
+    margin-bottom: rem(210px);
+    &:last-child {
+        margin-bottom: rem(139px);
+    }
+    &__img-blk {
+        width: 54%;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 93%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    &__text-blk {
+        width: 46.2%;
+        padding-top: rem(55px);
+        padding-bottom: rem(64px);
+    }
+    &__pretitle {
+        text-transform: uppercase;
+        color: $title-col;
+        font-size: rem(22px);
+        font-weight: 350;
+        margin-bottom: rem(3px);
+    }
+    &__title {
+        text-transform: uppercase;
+        color: $title-col;
+        font-size: rem(44px);
+        font-weight: 700;
+        margin-bottom: rem(23px);
+    }
+    &__text {
+        color: $text-col;
+        font-family: $text-ff;
+        font-size: rem(18px);
+        line-height: rem(31px);
+        letter-spacing: rem(0.15px);
+        margin-bottom: rem(30px);
+    }
+    &__btn {
+        margin-bottom: rem(56px);
+    }
+    &__link {
+        color: $title-col;
+        font-size: rem(18px);
+        font-weight: 350;
+        font-family: $text-ff;
+        font-style: italic;
+        text-decoration: none;
+        letter-spacing: rem(0.05px);
+        margin-left: rem(-8px);
+        & i {
+            margin-right: rem(2px);
+        }
+    }
+}

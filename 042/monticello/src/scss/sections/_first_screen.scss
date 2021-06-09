@@ -1,0 +1,69 @@
+.first-screen {
+    position: relative;
+    height: 100vh;
+    max-height: rem(800px);
+    margin-bottom: rem(130px);
+    .fs-slider__item {
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $main-col;
+        &-title {
+            margin-top: rem(33px);
+            font-size: rem(80px);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: rem(4.5px);
+            margin-bottom: rem(18px);
+        }
+        &-tagline {
+            font-size: rem(18px);
+            font-weight: 350;
+            text-transform: uppercase;
+            letter-spacing: rem(5.5px);
+        }
+    }
+    &__btn {
+        bottom: rem(50px);
+        left: 50%;
+        transform: translateX(-50%);
+        & a {
+            &::before {
+                margin-left: rem(-1px);
+                top: rem(14px);
+                border-left: rem(1px) solid #fff;
+                border-bottom: rem(1px) solid #fff;
+                transform: rotate(-45deg) translateX(-50%);
+            }
+        }
+    }
+    & .lSSlideOuter .lSPager.lSpg {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        &>li {
+            display: block;
+            margin: rem(32px);
+            &.active a {
+                background-color: $main-col;
+            }
+            &:hover a {
+                background-color: $main-col;
+            }
+            & a {
+                background-color: transparent;
+                border: rem(1px) solid $main-col;
+                width: rem(9px);
+                height: rem(9px);
+                transition: all .2s ease;
+            }
+        }
+    }
+}
