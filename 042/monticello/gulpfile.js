@@ -97,7 +97,13 @@ gulp.task('move', (done)=>{
 
 	const buildHTML = gulp.src('src/*.html')
 		.pipe(gulp.dest('dist'));
-	done();
+
+  gulp.src('src/*.xml')
+    .pipe(gulp.dest('dist'));
+
+  gulp.src('src/*.txt')
+    .pipe(gulp.dest('dist'));
+  done();
 });
 
 gulp.task('build', gulp.series('clean', 'sass', gulp.parallel('css', 'image', 'fonts', 'favicon', 'pluggins'),'move'), function(done) {
