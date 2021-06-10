@@ -96,34 +96,6 @@
   }
 }
 
-#to-top {
-  display: none;
-  position: fixed;
-  right: rem(25px);
-  bottom: rem(20px);
-  width: rem(50px);
-  height: rem(50px);
-  border-radius: 50%;
-  background-color: rgba($color: $header-bgc, $alpha: 0.3);
-  z-index: 199;
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: rem(21px);
-    left: rem(17.5px);
-    border-left: rem(2px) solid #fff;
-    border-top: rem(2px) solid #fff;
-    width: rem(14px);
-    height: rem(14px);
-    transform: rotate(45deg);
-  }
-  &:active,
-  &:hover {
-    background-color: rgba($color: $header-bgc, $alpha: 0.6);
-  }
-}
-
 .header {
   position: fixed;
   top: 0;
