@@ -797,7 +797,7 @@ a, button {
   position: relative; }
 
 .ln-slider__item {
-  height: 32.125rem !important;
+  height: 100%;
   background-color: #fff;
   position: relative; }
 
