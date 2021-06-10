@@ -318,7 +318,8 @@ a, button {
 .mob-soc {
   display: flex;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1.875rem; }
   .mob-soc__item {
     margin: 0.625rem; }
   .mob-soc__link {
