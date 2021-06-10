@@ -46,7 +46,7 @@ $(".fs-slider").lightSlider({
 });
 
 $("#scroll_down").on('click', function(){
-  $("html, body").animate({ scrollTop: heightCount()}, 400);
+  $("html, body").animate({ scrollTop: (heightCount() - 80)}, 400);
 });
 
 const lnSlider = $(".ln-slider").lightSlider({
