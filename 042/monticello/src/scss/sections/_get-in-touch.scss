@@ -103,6 +103,9 @@
 .fblk {
     padding-left: rem(45px);
     width: 50%;
+    &__inpt-blk {
+        position: relative;
+    }
     &__input {
         font-family: $main-ff;
         font-size: rem(18px);
@@ -117,7 +120,18 @@
             margin-bottom: rem(31px);
         }
     }
+    &__err {
+        position: absolute;
+        z-index: 1;
+        top: 65%;
+        left: rem(5px);
+        color: $err-col;
+    }
     
+}
+
+.has_err input {
+    border-color: $err-col;
 }
 
 @media screen and (max-width: 768px) {

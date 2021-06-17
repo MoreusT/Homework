@@ -11,6 +11,13 @@ $(function () {
       $("#to-top").fadeOut("100")
     }
   });
+
+  wow = new WOW(
+    {
+      animateClass: 'animate__animated'
+    }
+  )
+  wow.init();
 });
 
 $(function () {
@@ -126,30 +133,70 @@ function isValidEmail(email) {
   return regex.test(email);
 }
 
-$(document).on('submit', function(e){
-  if (e.target.id === "submit_form") {
-    e.preventDefault();
-    const email = fblk_email.value;
-    if (email !== "") {
-      if (isValidEmail(email)) {
-        submitForm();
-        topPanel.success("Form send successfully", true);
-        $("#submit_form").trigger("reset");
-      } else {
-        topPanel.warning("Enter valid email address", true);
-      }
-    } else {
-      topPanel.warning("Enter email address", true);
-    }
-  }
-});
+$(function(){
+  $("#submit_form").on('submit', function(e){
+      e.preventDefault();
+      sendMessage($(this));
+  });
 
-function submitForm(){
+  $("input").on('focus', function(){
+      if($(this).parents(".fblk__form").hasClass("has_err")){
+          if($(this).attr("name")!=="email"){
+              $(this).parents(".fblk__form").removeClass("has_err");
+              $(this).next("div").text("");
+          }
+      }
+  });
+  $('input[name="email"]').on('keyup', function(){
+      if($(this).val()===""){
+          $(this).parents(".fblk__form").addClass("has_err");
+          $(this).next("div").text("Field is required");
+      } else {
+          if(!isValidEmail($(this).val())){
+              $(this).parents(".fblk__form").addClass("has_err");
+              $(this).next("div").text("Invalid email address");
+          } else {
+              $(this).parents(".fblk__form").removeClass("has_err");
+              $(this).next("div").text("");
+          }
+      }
+  });
+  
+})
+
+function sendMessage(sform){
   const BOT_TOKEN = '1887132407:AAHj0jfGYMkm31W5wVAfK1hhvoITq_Y7mHE';
   const CHAT_ID = '-1001449470861';
-  const text = "Name: " + fblk_name.value + " Email: " + fblk_email.value;
-  if(text!==""){
+  let valid = true;
+  sform.find('*[data-required]').each(function(){
+      if($(this).val()===""){
+          valid = false;
+          $(this).parents(".fblk__form").addClass("has_err");
+          $(this).next("div").text("Field is required");
+      } else {
+          if($(this).attr("name")==="email"){
+              if(!isValidEmail($(this).val())){
+                  valid = false;
+                  $(this).parents(".fblk__form").addClass("has_err");
+                  $(this).next("div").text("Invalid email address");
+              }
+          }
+      }
+  });
+  if(valid){
+    const text = `Name: ${$("#fblk_name").val()}, Email: ${$("#fblk_email").val()}`;
       axios
-          .get('https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage?chat_id='+CHAT_ID+'&text='+text)
+      .get('https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage?chat_id='+CHAT_ID+'&text='+text)
+      .then((resp)=>{
+          if(resp.data.ok){
+              topPanel.success("Send successfully");
+              sform.trigger('reset');
+          } else {
+              topPanel.danger(resp.data.message);
+          }
+      })
+      .catch((err)=>{
+          topPanel.danger(err);
+      });
   }
 }

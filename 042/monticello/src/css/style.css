@@ -623,7 +623,7 @@ a, button {
 
 .wwd-blk {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 13.125rem; }
   .wwd-blk:last-child {
@@ -1088,6 +1088,8 @@ a, button {
 .fblk {
   padding-left: 2.8125rem;
   width: 50%; }
+  .fblk__inpt-blk {
+    position: relative; }
   .fblk__input {
     font-family: "Gotham", sans-serif;
     font-size: 1.125rem;
@@ -1100,6 +1102,15 @@ a, button {
     border-bottom: 0.0625rem solid #2c4058; }
     .fblk__input:last-of-type {
       margin-bottom: 1.9375rem; }
+  .fblk__err {
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 0.3125rem;
+    color: #ff4d4d; }
+
+.has_err input {
+  border-color: #ff4d4d; }
 
 @media screen and (max-width: 768px) {
   .get-in-touch__map {
