@@ -225,7 +225,7 @@ function timeToSecond(){
 function sTT(n){
   h = parseInt(n / 3600);
   m = parseInt(n / 60 - h * 60);
-  s = parseInt(n / 60 * 100 % 100);
+  s = parseInt(n - (h*3600+m*60));
   n = timeAddZero(h, m, s);
   return n;
 }
