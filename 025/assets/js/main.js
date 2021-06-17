@@ -168,24 +168,111 @@ function perfRange(){
   }
 }
 
-/*
-function glueDig(){
-  let n1 = parseInt(document.getElementById("glueDig_n1").value),
-    n2 = parseInt(document.getElementById("glueDig_n2").value),
+// task 7 
+
+const addZero = (n) => (n < 10 ? "0" + n : n);
+
+function timeAddZero(h = 0, m = 0, s = 0) {
+  n = addZero(h)+':'+addZero(m)+':'+addZero(s);
+  return n;
+}
+
+function timeFnc(){
+  let h = parseInt(document.getElementById("timeFnc_n1").value),
+    m = parseInt(document.getElementById("timeFnc_n2").value),
+    s = parseInt(document.getElementById("timeFnc_n3").value),
     valid = true,
     errMsg = "";
-  if (isNaN(n1) || isNaN(n2)) {
+  if (isNaN(h) || isNaN(m) || isNaN(s)) {
+    errMsg += "Enter number!";
+    valid = false;
+  }
+  if (valid) {
+    let rez = timeAddZero(h, m, s);
+    document.getElementById("timeFnc_rez").innerText = rez;
+  } else {
+    document.getElementById("timeFnc_rez").innerHTML = `<span class="text-danger">${errMsg}</span>`;
+  }
+}
+
+//task 8
+
+function tTS(h = 0, m = 0, s = 0){
+  n = h*3600+m*60+s;
+  return n;
+}
+
+function timeToSecond(){
+    let h = parseInt(document.getElementById("timeToSecond_n1").value),
+    m = parseInt(document.getElementById("timeToSecond_n2").value),
+    s = parseInt(document.getElementById("timeToSecond_n3").value),
+    valid = true,
+    errMsg = "";
+  if (isNaN(h) || isNaN(m) || isNaN(s)) {
+    errMsg += "Enter number!";
+    valid = false;
+  }
+  if (valid) {
+    let rez = tTS(h, m, s);
+    document.getElementById("timeToSecond_rez").innerText = rez;
+  } else {
+    document.getElementById("timeToSecond_rez").innerHTML = `<span class="text-danger">${errMsg}</span>`;
+  }
+}
+
+// task 9
+
+function sTT(n){
+  h = parseInt(n / 3600);
+  m = parseInt(n / 60 - h * 60);
+  s = parseInt(n / 60 * 100 % 100);
+  n = timeAddZero(h, m, s);
+  return n;
+}
+
+function secondToTime(){
+  let n = parseInt(document.getElementById("secondToTime_n").value),
+    valid = true,
+    errMsg = "";
+  if (isNaN(n)) {
     errMsg += "Enter number!";
     valid = false;
   }
   if (valid) {
     let rez = 0;
-    
-    
-
-    document.getElementById("glueDig_rez").innerText = rez;
+    rez = sTT(n);
+    document.getElementById("secondToTime_rez").innerText = rez;
   } else {
-    document.getElementById("glueDig_rez").innerHTML = `<span class="text-danger">${errMsg}</span>`;
+    document.getElementById("secondToTime_rez").innerHTML = `<span class="text-danger">${errMsg}</span>`;
   }
 }
-*/
+
+// task 10
+
+function timeDiff(){
+  let h1 = parseInt(document.getElementById("timeDiff_n1").value),
+    m1 = parseInt(document.getElementById("timeDiff_n2").value),
+    s1 = parseInt(document.getElementById("timeDiff_n3").value),
+    h2 = parseInt(document.getElementById("timeDiff_n4").value),
+    m2 = parseInt(document.getElementById("timeDiff_n5").value),
+    s2 = parseInt(document.getElementById("timeDiff_n6").value),
+    valid = true,
+    errMsg = "";
+  if (isNaN(h1) || isNaN(m1) || isNaN(s1) || isNaN(h2) || isNaN(m2) || isNaN(s2)) {
+    errMsg += "Enter number!";
+    valid = false;
+  }
+  if (valid) {
+    let rez = 0;
+    let d1 = 0;
+    let d2 = 0;
+    let n = 0;
+    d1 = tTS(h1, m1, s1);
+    d2 = tTS(h2, m2, s2);
+    n = Math.abs(d1 - d2);
+    rez = sTT(n);
+    document.getElementById("timeDiff_rez").innerText = rez;
+  } else {
+    document.getElementById("timeDiff_rez").innerHTML = `<span class="text-danger">${errMsg}</span>`;
+  }
+}
