@@ -33,6 +33,7 @@
     <meta name="robots" content="all">
     <meta name="revisit-after" content="1 days">
 
+    <link rel="stylesheet" href="plugins/wow_animate/animate.min.css">
     <link rel="stylesheet" href="plugins/lightslider/css/lightslider.min.css">
     <link rel="stylesheet" href="plugins/lightgallery/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -131,7 +132,7 @@
         <section class="what-we-do wwd">
             <div class="container">
                 <h2 class="wwd__title title">What we do</h2>
-                <div class="wwd__block wwd__block-left wwd-blk">
+                <div class="wwd__block wwd__block-left wwd-blk wow animate__slideInLeft">
                     <div class="wwd-blk__img-blk"><img class="wwd-blk__img lazy"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                         alt="big white futuristic building" data-src="images/wwd-img_01.jpg">
@@ -144,7 +145,7 @@
                         <a href="https://maps.google.com/?q=New Yourk" class="wwd-blk__link" rel="noopener noreferrer" target="_blank"><i class="icon-location"></i>New York City, United States - 1776 feet</a>
                     </div>
                 </div>
-                <div class="wwd_block wwd__block-right wwd-blk">
+                <div class="wwd_block wwd__block-right wwd-blk wow animate__slideInRight">
                     <div class="wwd-blk__img-blk"><img class="wwd-blk__img lazy"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
                         alt="factory style hight building" data-src="images/wwd-img_02.jpg">
@@ -273,7 +274,7 @@
         <section class="gallery">
             <div class="container">
                 <h2 class="gallery__title title">Gallery</h2>
-                <div class="gallery__lightgallery lightgallery" id="lightgallery">
+                <div class="gallery__lightgallery lightgallery wow animate__slideInUp" id="lightgallery">
                     <a class="lightgallery__link lightgallery__link-big lazy" href="images/gallery-img_01.jpg" data-lg-size="580-438">
                         <span class="lightgallery__zoom"></span>
                         <img class="lightgallery__img" alt="city building" src="images/gallery-img_01.jpg" />
@@ -316,9 +317,15 @@
                             <div class="cblk__clock cblk__link" itemscope itemtype="https://schema.org/Time"><i class="icon-clock"></i>From&nbsp;<span itemprop="opens">07:05AM</span> to&nbsp;<span itemprop="closes">19:30PM</span></div>
                         </div>
                         <div class="gint-sf__form-blk fblk">
-                            <form class="fblk__form" name="submit_form" id="submit_form" method="POST">
-                                <input class="fblk__name fblk__input" type="text" placeholder="Your name" name="name" id="fblk_name">
-                                <input class="fblk__email fblk__input" type="email" placeholder="Email" name="email" id="fblk_email">
+                            <form class="fblk__form" name="submit_form" id="submit_form">
+                                <div class="fblk__inpt-blk">
+                                    <input class="fblk__name fblk__input" type="text" placeholder="Your name" name="name" id="fblk_name" data-required>
+                                    <div id="name_err" class="fblk__err"></div>
+                                </div>
+                                <div class="fblk__inpt-blk">
+                                    <input class="fblk__email fblk__input" type="text" placeholder="Email" name="email" id="fblk_email" data-required>
+                                    <div id="email_err" class="fblk__err"></div>
+                                </div>
                                 <button type="submit" class="fblk__btn btn" id="submit_btn">Submit</button>
                             </form>
                         </div>
@@ -352,6 +359,7 @@
     <script src="js/lazyload.js"></script>
     <script src="js/top_panel.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="plugins/wow_animate/wow.min.js"></script>
     <script src="plugins/lightslider/js/lightslider.min.js"></script>
     <script src="plugins/lightgallery/lightgallery.min.js"></script>
     <script src="plugins/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
