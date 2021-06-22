@@ -306,7 +306,8 @@ a, button {
   .header__logo {
     width: 100%; }
     .header__logo-img {
-      width: 15.0625rem; }
+      width: 15.0625rem;
+      height: 100%; }
   .header.sticky {
     box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
     background: #55b7ff;
@@ -432,7 +433,8 @@ a, button {
     margin-top: -0.3125rem;
     width: 100%; }
     .footer__logo-img {
-      width: 15.0625rem; }
+      width: 15.0625rem;
+      height: 100%; }
   .footer__bottom {
     font-size: 0.875rem;
     color: #fff;
