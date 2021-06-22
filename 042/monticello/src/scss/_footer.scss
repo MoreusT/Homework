@@ -12,11 +12,15 @@
   }
   &__logo {
       margin-top: rem(-5px);
+      width: 100%;
+    &-img {
+      width: rem(241px);
+    }
   }
   &__bottom {
     font-size: rem(14px);
     color: $main-col;
-    font-weight: 350;
+    font-weight: 300;
   }
   &__copyright {
       margin-right: rem(35px);

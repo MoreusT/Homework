@@ -113,6 +113,12 @@
     align-items: center;
     height: 100%;
   }
+  &__logo {
+    width: 100%;
+    &-img {
+      width: rem(241px);
+    }
+  }
   &.sticky {
     box-shadow: 0 0 rem(3px) rgba(0, 0, 0, 0.3);
     background: rgb(85,183,255);
@@ -147,7 +153,7 @@
     text-decoration: none;
     color: $main-col;
     font-size: rem(14px);
-    font-weight: 350;
+    font-weight: 300;
     position: relative;
     &::before {
       content: "";
