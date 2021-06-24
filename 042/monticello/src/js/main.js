@@ -91,6 +91,10 @@ lightGallery(lightgallery, {
   speed: 500,
 });
 
+$('#lightgallery').lightGallery({
+  exThumbImage: 'data-exthumbimage'
+});
+
 let map;
 
 function initMap(){
