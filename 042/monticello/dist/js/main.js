@@ -87,12 +87,8 @@ $("#ln-slider_next").on('click', function () {
 });
 
 lightGallery(lightgallery, {
-  plugins: [lgZoom, lgThumbnail],
+  plugins: [lgZoom],
   speed: 500,
-});
-
-$('#lightgallery').lightGallery({
-  exThumbImage: 'data-exthumbimage'
 });
 
 let map;
