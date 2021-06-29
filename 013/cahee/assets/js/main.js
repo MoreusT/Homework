@@ -30,7 +30,7 @@ $(function () {
 
   $("#urnumber").mask("+38 (099) 999-99-99?9");
 
-  $("#subscribe_btn").on("submit", function(e) {
+  $(".subscribe_form").on("submit", function(e) {
     e.preventDefault();
     $(".sub_popup").addClass("sub_popup_open");
   });
@@ -41,5 +41,6 @@ $(function () {
 
   $("#contact_form").on("submit", function(e){
     e.preventDefault();
+    $("#contact_form")[0].reset();
   })
 });
