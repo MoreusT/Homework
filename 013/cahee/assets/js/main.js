@@ -29,4 +29,17 @@ $(function () {
   });
 
   $("#urnumber").mask("+38 (099) 999-99-99?9");
+
+  $("#subscribe_btn").on("submit", function(e) {
+    e.preventDefault();
+    $(".sub_popup").addClass("sub_popup_open");
+  });
+
+  $("#sub_btn").on("click", function(){
+    $(".sub_popup").removeClass("sub_popup_open");
+  });
+
+  $("#contact_form").on("submit", function(e){
+    e.preventDefault();
+  })
 });
