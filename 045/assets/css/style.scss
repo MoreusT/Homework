@@ -1,0 +1,141 @@
+body {
+    background-color: #b7d6ff;
+}
+
+.container.mt-4 {
+    .card.mb-4 {
+        z-index: 1;
+    }
+}
+
+.card {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.0px );
+    -webkit-backdrop-filter: blur( 6.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        position: relative;
+        content: '';
+        display: block;
+        padding-top: 140%;
+        box-shadow: 0 0 10px 5px #000 inset;
+        z-index: 1;
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    button {
+        z-index: 1;
+    }
+}
+
+.modal {
+    background-color: rgba($color: #000000, $alpha: .7);
+    &.show {
+        display: block;
+    }
+}
+
+.modal-img {
+    box-shadow: 0 0 6px 1px #000;
+}
+
+.ratings_item {
+    margin-bottom: 14px;
+}
+.rating_scale {
+    margin-top: 6px;
+    border: 1px solid #555;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(255,0,0);
+    background: -moz-linear-gradient(90deg, rgba(255,0,0,0.75) 0%, rgba(3,255,0,0.75) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,0,0,0.75) 0%, rgba(3,255,0,0.75) 100%);
+    background: linear-gradient(90deg, rgba(255,0,0,0.75) 0%, rgba(3,255,0,0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#03ff00",GradientType=1);
+    span {
+        display: inline-block;
+        height: 10px;
+        background-color: #dcdcdc;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.fade_screen {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba($color: #000000, $alpha: .7);
+    backdrop-filter: blur(3px);
+    &.opened{
+        display: block;
+    }
+    .fav_panel {
+        position: fixed;
+        height: 100vh;
+        width: 50%;
+        right: 0;
+        top: 0;
+        background-color: #b7d6ff;
+        padding: 10px 0 10px 10px;
+        .fav_list {
+            width: 100%;
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 10px;
+        }
+    }
+}
+
+span.page-link, span.page-link:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: rgba($color: #0d6efd, $alpha: 0.8);
+    border-color: #0d6efd;
+}
+
+a.page-link {
+    background-color: rgba($color: #fff, $alpha: 0.8);
+}
+
+.movie-list.rows_view {
+    .col {
+        width: 100%;
+        .card-body.flex-column {
+            flex-direction: row !important;
+        }
+        .card-img {
+            width: 150px;
+        }
+    }
+}
+
+.dropdown-menu {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.0px );
+    -webkit-backdrop-filter: blur( 6.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
