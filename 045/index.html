@@ -23,7 +23,7 @@
                     <form @submit="searchMovie">
                         <div class="row">
                             <div class="col-6">
-                                <input type="text" class="form-control" v-model="search" list="history">
+                                <input type="text" class="form-control" v-model="search" list="history" placeholder="What are you looking for?">
                                 <datalist id="history">
                                     <option v-for="h in search_history" :key="h" :value="h"></option>
                                 </datalist>
@@ -37,7 +37,7 @@
                                 </select>
                             </div>
                             <div class="col-1">
-                                <input type="number" class="form-control" v-model="year">
+                                <input type="number" class="form-control" v-model="year" placeholder="Year">
                             </div>
                             <div class="col-1">
                                 <button type="submit" class="btn btn-primary">Search</button>
