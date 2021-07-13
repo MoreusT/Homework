@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /
+
+Sitemap: https://moreust.github.io/githomework/048/sitemap.xml
+
+Host: moreust.github.io/githomework/

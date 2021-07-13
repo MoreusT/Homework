@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description"
+        content="Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. ">
+
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Creative digital project">
+    <meta property="og:description"
+        content="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.">
+    <meta property="og:url" content="https://moreust.github.io/githomework/048/">
+    <meta property="og:site_name" content="Creative digital projects">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image" content="https://moreust.github.io/githomework/048/assets/img/siteimage.jpg">
+
+    <style>
+        header {
+            width: 100%;
+            height: 120px;
+            position: fixed;
+            z-index: 999;
+            -webkit-transition: 0.1s;
+            -o-transition: 0.1s;
+            transition: 0.1s;
+        }
+
+        .header {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 100%;
+            padding: 0 30px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .header_logo svg {
+            fill: #fff;
+        }
+
+        .header_menu-list {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .header_menu-item {
+            margin-right: 26px;
+        }
+
+        .header_menu-item:last-child {
+            margin-left: 0;
+        }
+
+        .header_menu-item a {
+            text-transform: uppercase;
+            font-family: "Proxima Nova Semibold", sans-serif;
+            color: #fff;
+            font-size: 1.5rem;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            outline: none;
+        }
+
+        .header_menu-item a:hover {
+            color: #665f60;
+        }
+
+        .Header {
+            background: rgba(159, 154, 207, 0.4);
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+            height: 60px;
+        }
+
+        .mobile-header {
+            width: 90%;
+            height: 60px;
+        }
+
+        .mobile-header .header_logo svg {
+            height: 40px;
+        }
+
+        .big-screen {
+            padding: 400px 0 514px;
+            background: center center/cover no-repeat;
+            text-align: center;
+        }
+
+        .big-screen_title {
+            color: #fff;
+            font-size: 4.5rem;
+            text-transform: uppercase;
+            font-family: "Proxima Nova Bold", sans-serif;
+            margin-bottom: 44px;
+        }
+
+        .big-screen_description {
+            color: #fff;
+            font-size: 1.875rem;
+            font-family: "PT Sans", sans-serif;
+            font-style: italic;
+            width: 90%;
+            max-width: 660px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/plugins/dist/css/lightslider.min.css">
+    <link rel="stylesheet" href="assets/style/font.css">
+    <link rel="stylesheet" href="assets/style/hamburger.min.css">
+    <link rel="stylesheet" href="assets/style/style.min.css">
+
+    <title>Creative digital project</title>
+</head>
+
+<body>
+
+    <div class="mobile_menu">
+        <button class="hamburger hamburger--emphatic" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="header_logo">
+            <svg width="53.531" height="72">
+                <use xlink:href="assets/svg/sprite.svg#logo"></use>
+            </svg>
+        </div>
+        <ul class="header_menu-list">
+            <li class="header_menu-item"><a class="scroll" href="#">Home</a></li>
+            <li class="header_menu-item"><a class="scroll" href="#about">About</a></li>
+            <li class="header_menu-item"><a class="scroll" href="#services">Services</a></li>
+            <li class="header_menu-item"><a class="scroll" href="#works">Works</a></li>
+            <li class="header_menu-item"><a class="scroll" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div id="mobile_shadow"></div>
+
+    <div class="to_top"><span></span></div>
+
+    <header>
+        <div class="container header">
+            <div class="header_logo">
+                <svg width="53.531" height="72">
+                    <use xlink:href="assets/svg/sprite.svg#logo"></use>
+                </svg>
+            </div>
+            <ul class="header_menu-list">
+                <li class="header_menu-item"><a class="scroll" href="#">Home</a></li>
+                <li class="header_menu-item"><a class="scroll" href="#about">About</a></li>
+                <li class="header_menu-item"><a class="scroll" href="#services">Services</a></li>
+                <li class="header_menu-item"><a class="scroll" href="#works">Works</a></li>
+                <li class="header_menu-item"><a class="scroll" href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="big-screen lazy-bg" id="parallax" data-src="assets/img/bigscreen.jpg">
+            <div class="container">
+                <h1 class="big-screen_title">Creative digital projects</h1>
+                <p class="big-screen_description">
+                    Duis mollis, est non commodo luctus,
+                    nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                </p>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container about_content-wrap">
+                <div class="about_image-block">
+                    <img class="lazy"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                        alt="about" data-src="assets/img/aboutBG.jpg">
+                    <div class="about_image-block_text_inner">
+                        <svg width="60" height="64">
+                            <use xlink:href="assets/svg/sprite.svg#aboutUs"></use>
+                        </svg>
+                        <h2 class="about_text">About Us</h2>
+                    </div>
+                </div>
+                <div class="about_text-block">
+                    <p class="about_description uper">
+                        Nullam quis risus eget urna <b>mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida
+                        at eget metus.
+                        Donec ullamcorper
+                        nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                        auctor.
+                    </p>
+                    <p class="about_description lower">
+                        <b>Morbi leo risus,</b> porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel
+                        augue laoreet rutrum
+                        faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                        vestibulum. Maecenas
+                        faucibus mollis interdum. Cras mattis consectetur purus sit amet <i>fermentum</i>. Sed posuere
+                        consectetur est at lobortis.
+                    </p>
+                    <a href="#" class="btn about_btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <ul class="services_list">
+                    <li class="services_item grey design">
+                        <svg width="60" height="64">
+                            <use xlink:href="assets/svg/sprite.svg#penholder"></use>
+                        </svg>
+                        <h6 class="services_title">
+                            Graphic Design
+                        </h6>
+                        <div class="services_description">
+                            Cras mattis consectetur purus sit amet fermentum.
+                        </div>
+                    </li>
+                    <li class="services_item development">
+                        <svg width="57" height="57">
+                            <use xlink:href="assets/svg/sprite.svg#path"></use>
+                        </svg>
+                        <h6 class="services_title">
+                            Web Development
+                        </h6>
+                        <div class="services_description">
+                            Cras mattis consectetur purus sit amet fermentum.
+                        </div>
+                    </li>
+                    <li class="services_item seo">
+                        <svg width="61" height="64">
+                            <use xlink:href="assets/svg/sprite.svg#globe"></use>
+                        </svg>
+                        <h6 class="services_title">
+                            Seo & Marketing
+                        </h6>
+                        <div class="services_description">
+                            Cras mattis consectetur purus sit amet fermentum.
+                        </div>
+                    </li>
+                    <li class="services_item grey mobile">
+                        <svg width="36" height="64">
+                            <use xlink:href="assets/svg/sprite.svg#mobile"></use>
+                        </svg>
+                        <h6 class="services_title">
+                            Mobile Development
+                        </h6>
+                        <div class="services_description">
+                            Cras mattis consectetur purus sit amet fermentum.
+                        </div>
+                    </li>
+                    <li class="services_item lazy-bg big" data-src="assets/img/services.jpg">
+                        <svg width="50" height="64">
+                            <use xlink:href="assets/svg/sprite.svg#bill"></use>
+                        </svg>
+                        <h6 class="services_title">
+                            Our Services
+                        </h6>
+                        <div class="services_description">
+                            “Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra
+                            augue.”<br>
+                            <b>- Borat -</b>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="works lazy-bg" id="works" data-src="assets/img/worksBG.jpg">
+            <img class="works_logo lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="pen"
+                data-src="assets\img\Icon-Works.png">
+            <h2 class="works_title title">Recent works</h2>
+            <div class="works_slider-container">
+                <ul class="works_slider" id="works_slider">
+                    <li class="works_slider-item">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="product" data-src="assets/img/caruselimage.jpg">
+                    </li>
+                    <li class="works_slider-item">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="product" data-src="assets/img/caruselimage.jpg">
+                    </li>
+                    <li class="works_slider-item">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="product" data-src="assets/img/caruselimage.jpg">
+                    </li>
+                    <li class="works_slider-item">
+                        <img class="lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="product" data-src="assets/img/caruselimage.jpg">
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="prev_slide" id="prev_slide"></a>
+                <a href="javascript:void(0)" class="next_slide" id="next_slide"></a>
+            </div>
+            <a href="#" class="btn works_btn">View Gallery</a>
+        </section>
+        <section class="team" id="team">
+            <div class="container team_container">
+                <img class="team_logo lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="pen"
+                    data-src="assets\img\Icon-Team.png">
+                <h2 class="team_title title">Meet our team</h2>
+                <ul class="team_slider" id="team_slider">
+                    <li class="member slider_item">
+                        <div class="member_photo">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="name" data-src="assets/img/miguel.png">
+                        </div>
+                        <div class="member_info-wrap">
+                            <div class="member_name">
+                                Miguel Orbien
+                            </div>
+                            <div class="member_position">
+                                CEO & Founder
+                            </div>
+                        </div>
+                        <ul class="member_soc-list">
+                            <li class="member_soc-item"><a href="https://www.linkedin.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="linkedin"><i class="icon icon-linkedin2"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://www.instagram.com/?hl=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="googleplus"><i
+                                        class="icon icon-google-plus"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.facebook.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="facebook"><i class="icon icon-facebook"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://twitter.com/?lang=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="twitter"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="member slider_item">
+                        <div class="member_photo">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="name" data-src="assets/img/jackie.png">
+                        </div>
+                        <div class="member_info-wrap">
+                            <div class="member_name">
+                                Jackie Carrol
+                            </div>
+                            <div class="member_position">
+                                Art Director
+                            </div>
+                        </div>
+                        <ul class="member_soc-list">
+                            <li class="member_soc-item"><a href="https://www.behance.net/" target="_blank"
+                                    rel="noreferrer nofollow" title="behance"><i class="icon icon-behance"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.linkedin.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="linkedin"><i class="icon icon-linkedin2"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://www.instagram.com/?hl=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="googleplus"><i
+                                        class="icon icon-google-plus"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.facebook.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="facebook"><i class="icon icon-facebook"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://twitter.com/?lang=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="twitter"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="member slider_item">
+                        <div class="member_photo">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="name" data-src="assets/img/ida.png">
+                        </div>
+                        <div class="member_info-wrap">
+                            <div class="member_name">
+                                Ida Morrison
+                            </div>
+                            <div class="member_position">
+                                Designer
+                            </div>
+                        </div>
+                        <ul class="member_soc-list">
+                            <li class="member_soc-item"><a href="https://www.behance.net/" target="_blank"
+                                    rel="noreferrer nofollow" title="behance"><i class="icon icon-behance"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.linkedin.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="linkedin"><i class="icon icon-linkedin2"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://www.instagram.com/?hl=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="googleplus"><i
+                                        class="icon icon-google-plus"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.facebook.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="facebook"><i class="icon icon-facebook"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://twitter.com/?lang=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="twitter"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="member slider_item">
+                        <div class="member_photo">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="name" data-src="assets/img/johny.jpg">
+                        </div>
+                        <div class="member_info-wrap">
+                            <div class="member_name">
+                                Johny Sins
+                            </div>
+                            <div class="member_position">
+                                Actor
+                            </div>
+                        </div>
+                        <ul class="member_soc-list">
+                            <li class="member_soc-item"><a href="https://www.behance.net/" target="_blank"
+                                    rel="noreferrer nofollow" title="behance"><i class="icon icon-behance"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.linkedin.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="linkedin"><i class="icon icon-linkedin2"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://www.instagram.com/?hl=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="googleplus"><i
+                                        class="icon icon-google-plus"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.facebook.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="facebook"><i class="icon icon-facebook"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://twitter.com/?lang=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="twitter"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="member slider_item">
+                        <div class="member_photo">
+                            <img class="lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="name" data-src="assets/img/miguel.png">
+                        </div>
+                        <div class="member_info-wrap">
+                            <div class="member_name">
+                                Miguel Orbien
+                            </div>
+                            <div class="member_position">
+                                CEO & Founder
+                            </div>
+                        </div>
+                        <ul class="member_soc-list">
+                            <li class="member_soc-item"><a href="https://www.behance.net/" target="_blank"
+                                    rel="noreferrer nofollow" title="behance"><i class="icon icon-behance"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.linkedin.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="linkedin"><i class="icon icon-linkedin2"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://www.instagram.com/?hl=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="googleplus"><i
+                                        class="icon icon-google-plus"></i></a></li>
+                            <li class="member_soc-item"><a href="https://www.facebook.com/" target="_blank"
+                                    rel="noreferrer nofollow" title="facebook"><i class="icon icon-facebook"></i></a>
+                            </li>
+                            <li class="member_soc-item"><a href="https://twitter.com/?lang=ru" target="_blank"
+                                    rel="noreferrer nofollow" title="twitter"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="prev_slide" id="prev_slide-team"></a>
+                <a href="javascript:void(0)" class="next_slide" id="next_slide-team"></a>
+            </div>
+        </section>
+        <section class="contact lazy-bg" id="contact" data-src="assets/img/map.jpg">
+            <div class="container contact_container">
+                <img class="contact_logo lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="map"
+                    data-src="assets\img\contact.png">
+                <h2 class="contact_title title">Get in touch</h2>
+                <div class="contact_form-wrap">
+                    <form action="#" method="POST" name="message" class="contact_form" id="contact_form">
+                        <div class="contact_input-wrap form_row">
+                            <input placeholder="&nbsp;" class="contact_input" type="text" id="userName" name="name"
+                                data-required>
+                            <label class="contact_placeholder" for="userName">Your Name <span
+                                    class="contact_star">*</span></label>
+                            <div class="contact_err_msg"></div>
+                        </div>
+                        <div class="contact_input-wrap form_row">
+                            <input placeholder="&nbsp;" class="contact_input" type="text" id="userEmail" name="email"
+                                data-required>
+                            <label class="contact_placeholder second" for="userEmail">Your Email <span
+                                    class="contact_star">*</span></label>
+                            <div class="contact_err_msg"></div>
+                        </div>
+                        <div class="contact_textarea-wrap form_row">
+                            <textarea placeholder="&nbsp;" class="contact_textarea" id="userMessage" name="text"
+                                data-required></textarea>
+                            <label class="contact_placeholder" for="userMessage">Your Message <span
+                                    class="contact_star">*</span></label>
+                            <div class="contact_err_msg"></div>
+                        </div>
+                    </form>
+                    <button form="contact_form" class="btb contact_btn" id="sendInfo" type="submit">Send
+                        Message</button>
+                </div>
+                <div class="contact_alert" id="error">
+                    Please enter correct data
+                </div>
+                <div class="contact_alert" id="done">
+                    Thank you=)
+                </div>
+            </div>
+            <div class="contact_sticker address">
+                <div class="contact_sticker-icon_wrap">
+                    <img src="assets/img/Icon-Address.png" alt="address">
+                </div>
+                <div class="contact_sticker-info_wrap">
+                    <a href="https://goo.gl/maps/MgRmi53R5VooEAP56" target="_blank" rel="noreferrer nofollow"
+                        title="adress">
+                        Ikan Piranha Atas 220C
+                        Malang - East Java
+                        Indonesia
+                    </a>
+                </div>
+            </div>
+            <div class="contact_sticker phone">
+                <div class="contact_sticker-icon_wrap">
+                    <img class="phone" src="assets/img/phone.png" alt="phone">
+                </div>
+                <div class="contact_sticker-info_wrap">
+                    <a href="tel:+0012345678901" target="_blank" title="phone">+00 123 4567 8901</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_copy">
+                &copy;2014 <b>tulus</b>driyo. All Rights Reserved.
+            </div>
+            <ul class="member_soc-list soc_list">
+                <li class="member_soc-item soc_item"><a href="https://www.behance.net/" target="_blank"
+                        rel="noreferrer nofollow" title="behance"><i class="icon icon-behance"></i></a></li>
+                <li class="member_soc-item soc_item"><a href="https://www.linkedin.com/" target="_blank"
+                        rel="noreferrer nofollow" title="linkedin"><i class="icon icon-linkedin2"></i></a></li>
+                <li class="member_soc-item soc_item"><a href="https://www.instagram.com/?hl=ru" target="_blank"
+                        rel="noreferrer nofollow" title="googleplus"><i class="icon icon-google-plus"></i></a></li>
+                <li class="member_soc-item soc_item"><a href="https://www.facebook.com/" target="_blank"
+                        rel="noreferrer nofollow" title="facebook"><i class="icon icon-facebook"></i></a></li>
+                <li class="member_soc-item soc_item"><a href="https://twitter.com/?lang=ru" target="_blank"
+                        rel="noreferrer nofollow" title="twitter"><i class="icon icon-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="assets/plugins/jquery-3.6.0.min.js"></script>
+    <script src="assets/plugins/dist/js/lightslider.min.js"></script>
+    <script src="assets/plugins/intersection-observer.js"></script>
+    <script src="assets/plugins/lazyload.js"></script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>
